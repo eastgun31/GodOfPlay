@@ -51,6 +51,7 @@ public class AttackRange : MonoBehaviour
 
     private void OnTriggerExit(Collider col)
     {
+        p_unit = null;
         target = null;
         //p_unit = null;
         Debug.Log("Box Enemy : Target lost");

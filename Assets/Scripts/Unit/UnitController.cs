@@ -49,16 +49,21 @@ public class UnitController : MonoBehaviour
         navMeshAgent.SetDestination(end);
     }
 
-    void Update()
+    private void FixedUpdate()
     {
         navMeshAgent.speed = umoveSpeed;
 
+        Uslider.value = uhealth / maxhp;
+
         if (uhealth <= 0)
         {
-            RemoveList();
-            P_Die();
+            Invoke("P_Die", 4f);
         }
-        Uslider.value = uhealth / maxhp;
+
+    }
+
+    void Update()
+    {
     }
 
     void RemoveList()
@@ -97,10 +102,13 @@ public class UnitController : MonoBehaviour
 
     void P_Die()    //ÇÃ·¹ÀÌ¾î À¯´Ö Á×À½
     {
+        RTSUnitController.instance.UnitList.Remove(this);
+        RTSUnitController.instance.selectedUnitList.Remove(this);
+
         GameManager.instance.All_Obj--;
-        Destroy(gameObject, 4f);
-        Destroy(gameObject);
+        GameManager.instance.Aobj();
         EnemySpawn.instance.gold += 2; //¾Æ±º À¯´Ö Á×¿´À» ¶§ Àû ÀçÈ­ È¹µæ
+        Destroy(gameObject);
     }
 
     public void ApolloHeal(float heal)

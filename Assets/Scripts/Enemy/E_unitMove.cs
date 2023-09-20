@@ -30,14 +30,23 @@ public class E_unitMove : MonoBehaviour
 
     }
 
+    private void FixedUpdate()
+    {
+        if (ehealth <= 0)
+        {
+            Invoke("E_Die", 4f);
+        }
+
+    }
+
+
     // Update is called once per frame
     void Update()
     {
-
-        if (ehealth <= 0)
-        {
-            E_Die();
-        }
+        //if (ehealth <= 0)
+        //{
+        //    Invoke("E_Die", 4f);
+        //}
     }
 
     public void MovePoint(Vector3 i)
