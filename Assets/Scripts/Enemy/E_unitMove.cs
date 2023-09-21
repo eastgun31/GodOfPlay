@@ -22,6 +22,8 @@ public class E_unitMove : MonoBehaviour
     public float edefense;
     public float emoveSpeed;
 
+    public Points point;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,9 +53,12 @@ public class E_unitMove : MonoBehaviour
 
     public void MovePoint(Vector3 i)
     {
-        lastDesti = i;
-        moving.speed = emoveSpeed;
-        moving.SetDestination(i);
+        if(targetUnit == null)
+        {
+            lastDesti = i;
+            moving.speed = emoveSpeed;
+            moving.SetDestination(i);
+        }
 
         transform.SetParent(null);
     }
@@ -65,7 +70,6 @@ public class E_unitMove : MonoBehaviour
         targetUnit = p_unit;
         moving.SetDestination(dir);
         moving.stoppingDistance = 2f;
-
 
         if (unitNum == 2 || unitNum == 6 || unitNum == 10)
         {
@@ -81,8 +85,8 @@ public class E_unitMove : MonoBehaviour
         else if (p_unit.uhealth <= 0)
         {
             targetUnit = null;
-        }
 
+        }
         if (targetUnit == null)
         {
             moving.SetDestination(lastDesti);
@@ -93,6 +97,11 @@ public class E_unitMove : MonoBehaviour
     void E_Die()
     {
         GameManager.instance.e_population--;
+        if(point)
+        {
+            point.e_distance = 100f;
+        }
+        
         Destroy(gameObject);
     }
 
@@ -184,6 +193,14 @@ public class E_unitMove : MonoBehaviour
             eattackPower = GameManager.instance.attackPower + 15;
             edefense = GameManager.instance.defense + 15;
             emoveSpeed = GameManager.instance.moveSpeed + 3;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Point"))
+        {
+            point = other.GetComponent<Points>();
         }
     }
 

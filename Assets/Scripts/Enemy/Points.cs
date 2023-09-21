@@ -266,7 +266,6 @@ public class Points : MonoBehaviour
                 }
 
             }
-
         }
 
         yield return new WaitForSeconds(1f);

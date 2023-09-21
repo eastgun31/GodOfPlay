@@ -9,6 +9,7 @@ TagManager:
   - Bpoint
   - Cpoint
   - Enemy
+  - Point
   layers:
   - Default
   - TransparentFX

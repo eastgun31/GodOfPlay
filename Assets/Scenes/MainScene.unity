@@ -26092,7 +26092,7 @@ GameObject:
   - component: {fileID: 645044361}
   m_Layer: 0
   m_Name: Dpoint
-  m_TagString: Apoint
+  m_TagString: Point
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26128,6 +26128,7 @@ MonoBehaviour:
   time: 0
   playerhome: {fileID: 861856504}
   e_unit: []
+  p_unit: []
   points:
   - {fileID: 1524525830}
   - {fileID: 750327214}
@@ -30471,7 +30472,7 @@ GameObject:
   - component: {fileID: 750327216}
   m_Layer: 0
   m_Name: Bpoint
-  m_TagString: Bpoint
+  m_TagString: Point
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30507,6 +30508,7 @@ MonoBehaviour:
   time: 0
   playerhome: {fileID: 861856504}
   e_unit: []
+  p_unit: []
   points:
   - {fileID: 1524525830}
   - {fileID: 750327214}
@@ -39312,7 +39314,7 @@ GameObject:
   - component: {fileID: 933587124}
   m_Layer: 0
   m_Name: Cpoint
-  m_TagString: Cpoint
+  m_TagString: Point
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39348,6 +39350,7 @@ MonoBehaviour:
   time: 0
   playerhome: {fileID: 861856504}
   e_unit: []
+  p_unit: []
   points:
   - {fileID: 1524525830}
   - {fileID: 750327214}
@@ -47434,7 +47437,7 @@ GameObject:
   - component: {fileID: 1141676770}
   m_Layer: 0
   m_Name: Epoint
-  m_TagString: Apoint
+  m_TagString: Point
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47470,6 +47473,7 @@ MonoBehaviour:
   time: 0
   playerhome: {fileID: 861856504}
   e_unit: []
+  p_unit: []
   points:
   - {fileID: 1524525830}
   - {fileID: 750327214}
@@ -62741,7 +62745,7 @@ GameObject:
   - component: {fileID: 1524525832}
   m_Layer: 0
   m_Name: Apoint
-  m_TagString: Apoint
+  m_TagString: Point
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62777,6 +62781,7 @@ MonoBehaviour:
   time: 0
   playerhome: {fileID: 861856504}
   e_unit: []
+  p_unit: []
   points:
   - {fileID: 1524525830}
   - {fileID: 750327214}

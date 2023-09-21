@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class AttackRange : MonoBehaviour
 {
-    Transform target;
+    private Transform[] targets;
+    private Transform target;
     UnitController p_unit;
+
+    public List<UnitController> p_units = new List<UnitController>();
+    
     public E_unitMove parent;
 
     // Start is called before the first frame update
@@ -30,11 +34,11 @@ public class AttackRange : MonoBehaviour
     //{
     //    if (col.tag == "player")
     //    {
-    //        //if(parent.targetUnit == null)
-    //        //{
-    //        //    target = null;
-    //        //    p_unit = null;
-    //        //}
+    //        p_units.Add(col.GetComponent<UnitController>());
+    //        for(int i = 0; i < p_units.Count; i++)
+    //        {
+    //            targets[i] = col.gameObject.transform;
+    //        }
     //    }
     //}
 
@@ -51,10 +55,16 @@ public class AttackRange : MonoBehaviour
 
     private void OnTriggerExit(Collider col)
     {
-        p_unit = null;
-        target = null;
+        if(col.CompareTag("Player"))
+        {
+            target = null;
+            p_unit = null;
+            //if(p_unit == null && target == null)
+            //    parent.MovePoint(parent.lastDesti);
+        }
         //p_unit = null;
         Debug.Log("Box Enemy : Target lost");
+        //parent.MovePoint(parent.lastDesti);
     }
 
 }
