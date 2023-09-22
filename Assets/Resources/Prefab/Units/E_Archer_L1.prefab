@@ -536,6 +536,7 @@ MonoBehaviour:
   eattackPower: 0
   edefense: 0
   emoveSpeed: 0
+  point: {fileID: 0}
 --- !u!54 &-8701729715058445608
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -563,7 +564,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 5
-  m_Acceleration: 8
+  m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 2

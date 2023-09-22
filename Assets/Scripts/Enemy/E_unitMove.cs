@@ -24,20 +24,24 @@ public class E_unitMove : MonoBehaviour
 
     public Points point;
 
+    private Animator enemyAnim;
+
     // Start is called before the first frame update
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
         moving = GetComponent<NavMeshAgent>();
+        enemyAnim = GetComponent<Animator>();
 
+        StartCoroutine(Pcheck());
     }
 
     private void FixedUpdate()
     {
-        if (ehealth <= 0)
-        {
-            Invoke("E_Die", 4f);
-        }
+        //if (ehealth <= 0)
+        //{
+        //    Invoke("E_Die", 4f);
+        //}
 
     }
 
@@ -58,6 +62,8 @@ public class E_unitMove : MonoBehaviour
             lastDesti = i;
             moving.speed = emoveSpeed;
             moving.SetDestination(i);
+
+            enemyAnim.SetFloat("run", moving.remainingDistance);
         }
 
         transform.SetParent(null);
@@ -78,17 +84,24 @@ public class E_unitMove : MonoBehaviour
 
         if (time > 1f && p_unit.uhealth > 0)
         {
+            moving.isStopped = true;
+            moving.velocity = Vector3.zero;
             Debug.Log("АјАн");
+            enemyAnim.SetTrigger("attack");
             p_unit.uhealth -= eattackPower;
             time = 0;
         }
-        else if (p_unit.uhealth <= 0)
-        {
-            targetUnit = null;
 
+        if (p_unit.uhealth <= 0)
+        {
+            moving.isStopped = true;
+            moving.velocity = Vector3.zero;
+            targetUnit = null;
         }
+
         if (targetUnit == null)
         {
+            moving.isStopped = false;
             moving.SetDestination(lastDesti);
         }
     }
@@ -195,6 +208,28 @@ public class E_unitMove : MonoBehaviour
             emoveSpeed = GameManager.instance.moveSpeed + 3;
         }
     }
+
+    IEnumerator Pcheck()
+    {
+        if (ehealth <= 0)
+        {
+            GameManager.instance.e_population--;
+            if (point)
+            {
+                point.e_distance = 100f;
+            }
+
+            enemyAnim.SetTrigger("death");
+
+            yield return new WaitForSeconds(4f);
+
+            Destroy(gameObject);
+        }
+
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(Pcheck());
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {

@@ -18,17 +18,22 @@ public class Unit_AttackRange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Enemy"))
+        if (target != null)
         {
-            StartCoroutine(Attack());
+            Debug.Log("Å¸°ÙÃßÀû");
+            Vector3 dir = target.position;
+            parent.Attack(dir, e_unit);
         }
-
     }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("Enemy"))
+    //    {
+    //        StartCoroutine(Attack());
+    //    }
+
+    //}
 
     private void OnTriggerStay(Collider col)
     {
@@ -42,8 +47,11 @@ public class Unit_AttackRange : MonoBehaviour
 
     private void OnTriggerExit(Collider col)
     {
-        //e_unit = null;
-        target = null;
+        if(col.CompareTag("Player"))
+        {
+            e_unit = null;
+            target = null;
+        }
         //p_unit = null;
         Debug.Log("Box Enemy : Target lost");
 
@@ -51,10 +59,10 @@ public class Unit_AttackRange : MonoBehaviour
 
     IEnumerator Attack()
     {
-        if (Input.GetMouseButtonDown(1))
-        {
-            StopCoroutine(Attack());
-        }
+        //if (Input.GetMouseButtonDown(1))
+        //{
+        //    StopCoroutine(Attack());
+        //}
 
         if (target != null)
         {

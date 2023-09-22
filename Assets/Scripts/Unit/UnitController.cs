@@ -2,12 +2,15 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.AI;
+using System.Collections.Generic;
+using System.Collections;
 
 public class UnitController : MonoBehaviour
 {
     [SerializeField]
     private GameObject unitMarker;
     private NavMeshAgent navMeshAgent;
+    private Animator playerAnim;
 
     public int unitnumber = 0;
 
@@ -19,6 +22,7 @@ public class UnitController : MonoBehaviour
     float time = 3f;    //공격 쿨타임
     public E_unitMove targetUnit;   //공격할 유닛
     public Points point; // 점령중인 거점
+    float currentVelocity;
 
     public Slider Uslider;
     public float maxhp;
@@ -26,11 +30,13 @@ public class UnitController : MonoBehaviour
     private void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        
     }
 
     private void Start()
     {
-        //StartCoroutine(Pcheck());
+        StartCoroutine(Pcheck());
+        playerAnim = GetComponent<Animator>();
         maxhp = uhealth;
     }
 
@@ -46,6 +52,7 @@ public class UnitController : MonoBehaviour
 
     public void MoveTo(Vector3 end)
     {
+        playerAnim.SetFloat("run", navMeshAgent.velocity.magnitude);
         navMeshAgent.SetDestination(end);
     }
 
@@ -55,16 +62,17 @@ public class UnitController : MonoBehaviour
 
         Uslider.value = uhealth / maxhp;
 
-        if (uhealth <= 0)
-        {
-            Invoke("P_Die", 4f);
-        }
+
+        //if (uhealth <= 0)
+        //{
+        //    Invoke("P_Die", 4f);
+        //}
 
     }
 
     void Update()
     {
-
+                
     }
 
     void RemoveList()
@@ -77,7 +85,7 @@ public class UnitController : MonoBehaviour
 
     public void Attack(Vector3 dir, E_unitMove e_unit)  //플레이어유닛 공격
     {
-        if (Input.GetMouseButtonDown(1))
+        if (uhealth <= 0)
             return;
 
         time += Time.deltaTime;
@@ -95,6 +103,7 @@ public class UnitController : MonoBehaviour
         if (time > 1f && e_unit.ehealth > 0)
         {
             Debug.Log("적공격");
+            playerAnim.SetTrigger("attack");
             e_unit.ehealth -= uattackPower;
             time = 0;
         }
@@ -249,20 +258,30 @@ public class UnitController : MonoBehaviour
         }   
     }
 
-    //IEnumerator Pcheck()
-    //{
-    //    if (uhealth <= 0)
-    //    {
+    IEnumerator Pcheck()
+    {
+        if (uhealth <= 0)
+        {
+            RTSUnitController.instance.UnitList.Remove(this);
+            RTSUnitController.instance.selectedUnitList.Remove(this);
 
-    //        GameManager.instance.All_Obj--;
-    //        GameManager.instance.Aobj();
-    //        Destroy(gameObject, 4f);
-    //        StopCoroutine(Pcheck());
-    //    }
+            GameManager.instance.All_Obj--;
+            GameManager.instance.Aobj();
+            EnemySpawn.instance.gold += 2; //아군 유닛 죽였을 때 적 재화 획득
 
-    //    yield return new WaitForSeconds(1f);
-    //    StartCoroutine(Pcheck());
-    //}
+            if (point)
+            {
+                point.p_distance = 100f;
+            }
+
+            playerAnim.SetTrigger("death");
+            yield return new WaitForSeconds(4f);
+            Destroy(gameObject);
+        }
+
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(Pcheck());
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -271,5 +290,7 @@ public class UnitController : MonoBehaviour
             point = other.GetComponent<Points>();
         }
     }
+
+    
 }
 

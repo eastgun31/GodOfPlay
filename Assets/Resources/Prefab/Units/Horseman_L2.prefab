@@ -1365,7 +1365,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -1450,6 +1450,7 @@ MonoBehaviour:
   udefense: 0
   umoveSpeed: 0
   targetUnit: {fileID: 0}
+  point: {fileID: 0}
   Uslider: {fileID: 8718280596304407403}
   maxhp: 0
 --- !u!54 &-2756207479940588663
