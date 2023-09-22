@@ -239,7 +239,6 @@ public class Points : MonoBehaviour
         //int random = Random.Range(0, 5);
         if (pointcheck == 1)
         {
-
             if (GameManager.instance.attacking == true)
             {
                 for (int i = 0; i < e_unit.Count; i++)
@@ -264,7 +263,6 @@ public class Points : MonoBehaviour
                     e_unit[i].MovePoint(playerhome.transform.position);
                     e_unit.Remove(e_unit[i]);
                 }
-
             }
         }
 

@@ -837,7 +837,7 @@ Animator:
   m_GameObject: {fileID: 179124}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 02ded044b8e0963439276550f50be6f9, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c2a9bed252f13a547b63ee2a6a938bb7, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -866,6 +866,7 @@ MonoBehaviour:
   udefense: 0
   umoveSpeed: 0
   targetUnit: {fileID: 0}
+  point: {fileID: 0}
   Uslider: {fileID: 7675664200170684716}
   maxhp: 0
 --- !u!195 &237265588284140132
@@ -1694,7 +1695,7 @@ Transform:
   - {fileID: 4554398382176959353}
   m_Father: {fileID: 497262}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -2.0309422, y: 2.7364492, z: 173.82527}
 --- !u!1 &6856894396404676854
 GameObject:
   m_ObjectHideFlags: 0
