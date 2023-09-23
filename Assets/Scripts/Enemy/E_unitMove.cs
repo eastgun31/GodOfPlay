@@ -26,6 +26,13 @@ public class E_unitMove : MonoBehaviour
 
     private Animator enemyAnim;
 
+    enum EState
+    {
+        idle, go, attack, die
+    }
+
+    EState eunits;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,15 +40,16 @@ public class E_unitMove : MonoBehaviour
         moving = GetComponent<NavMeshAgent>();
         enemyAnim = GetComponent<Animator>();
 
-        StartCoroutine(Pcheck());
+        //StartCoroutine(Pcheck());
     }
 
     private void FixedUpdate()
     {
-        //if (ehealth <= 0)
-        //{
-        //    Invoke("E_Die", 4f);
-        //}
+        if (ehealth <= 0)
+        {
+            //eunits = EState.die;
+            Invoke("E_Die", 2f);
+        }
 
     }
 
@@ -53,6 +61,40 @@ public class E_unitMove : MonoBehaviour
         //{
         //    Invoke("E_Die", 4f);
         //}
+
+        //switch(eunits)
+        //{
+        //    case EState.idle:
+        //        Euidle();
+        //        break;
+        //    case EState.go:
+        //        EuGo();
+        //        break;
+        //    case EState.attack:
+        //        EuAttack();
+        //        break;
+        //    case EState.die:
+        //        EuDie();
+        //        break;
+        //}
+    }
+
+    void Euidle()
+    {
+        moving.isStopped = true;
+        moving.velocity = Vector3.zero;
+    }
+    void EuGo()
+    {
+        enemyAnim.SetTrigger("run");
+    }
+    void EuAttack()
+    {
+        enemyAnim.SetTrigger("attack");
+    }
+    void EuDie()
+    {
+        enemyAnim.SetTrigger("death");
     }
 
     public void MovePoint(Vector3 i)
@@ -63,6 +105,7 @@ public class E_unitMove : MonoBehaviour
             moving.speed = emoveSpeed;
             moving.SetDestination(i);
 
+            //eunits = EState.go;
             enemyAnim.SetFloat("run", moving.remainingDistance);
         }
 
@@ -84,9 +127,11 @@ public class E_unitMove : MonoBehaviour
 
         if (time > 1f && p_unit.uhealth > 0)
         {
+            //eunits = EState.idle;
             moving.isStopped = true;
             moving.velocity = Vector3.zero;
             Debug.Log("АјАн");
+            //eunits = EState.attack;
             enemyAnim.SetTrigger("attack");
             p_unit.uhealth -= eattackPower;
             time = 0;
@@ -94,8 +139,7 @@ public class E_unitMove : MonoBehaviour
 
         if (p_unit.uhealth <= 0)
         {
-            moving.isStopped = true;
-            moving.velocity = Vector3.zero;
+            eunits = EState.idle;
             targetUnit = null;
         }
 
@@ -114,7 +158,9 @@ public class E_unitMove : MonoBehaviour
         {
             point.e_distance = 100f;
         }
-        
+
+        enemyAnim.SetTrigger("death");
+
         Destroy(gameObject);
     }
 

@@ -35,7 +35,7 @@ public class UnitController : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Pcheck());
+        //StartCoroutine(Pcheck());
         playerAnim = GetComponent<Animator>();
         maxhp = uhealth;
     }
@@ -63,10 +63,10 @@ public class UnitController : MonoBehaviour
         Uslider.value = uhealth / maxhp;
 
 
-        //if (uhealth <= 0)
-        //{
-        //    Invoke("P_Die", 4f);
-        //}
+        if (uhealth <= 0)
+        {
+            Invoke("P_Die", 4f);
+        }
 
     }
 

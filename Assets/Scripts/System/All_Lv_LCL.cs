@@ -9,6 +9,8 @@ public class All_Lv_LCL : MonoBehaviour
     private int Gold;
     private int U;
 
+    public GameObject swordPosition;//
+
     public Vector3 warrio_spawnPosition;
     public Vector3 shield_spawnPosition;
     public Vector3 Archer_spawnPosition;
@@ -71,8 +73,8 @@ public class All_Lv_LCL : MonoBehaviour
     {
         Gold = GameManager.instance.gold;
         U = GameManager.instance.All_Obj;
-        warrio_spawnPosition = new Vector3(25, 0, 35);
-        warrio_spawnPosition = new Vector3(30, 0, 36); //위치 지정
+        //warrio_spawnPosition = new Vector3(25, 0, 35);
+        //warrio_spawnPosition = new Vector3(30, 0, 36); //위치 지정
         shield_spawnPosition = new Vector3(32, 0, 34);
         Archer_spawnPosition = new Vector3(34, 0, 32);
         HorseMan_spawnPosition = new Vector3(36, 0, 30);
@@ -105,6 +107,7 @@ public class All_Lv_LCL : MonoBehaviour
             {
                 GameManager.instance.gold -= 5;
                 GameObject newObject = Instantiate(Warrior_1L_Obj, warrio_spawnPosition, Quaternion.identity); //검사 1레벨 유닛 생성
+                newObject.transform.position = swordPosition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
