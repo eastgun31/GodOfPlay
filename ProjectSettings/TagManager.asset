@@ -10,6 +10,7 @@ TagManager:
   - Cpoint
   - Enemy
   - Point
+  - Playhome
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - DieUnit
   - E_Unit
   - invisible
-  - 
+  - MiniMap
   - 
   - 
   - 

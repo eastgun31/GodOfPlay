@@ -103,7 +103,8 @@ public class In_Game_UI : MonoBehaviour
 
             ESC_bool = true;
             _OK_ = true;
-             //ESC를 다시 누르면 시간이 흐른다.
+            Time.timeScale = 1;
+            //ESC를 다시 누르면 시간이 흐른다.
         }
         else
         {

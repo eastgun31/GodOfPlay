@@ -66,12 +66,10 @@ public class Points : MonoBehaviour
             StartCoroutine("eUnitNewPoint", other.gameObject);
             random = Random.Range(0, 5);
         }
-        
+
         if (other.tag == "Enemy")
         {
             p_unit.Add(other.gameObject.GetComponent<UnitController>());
-
-            StartCoroutine("eUnitNewPoint", other.gameObject);
         }
     }
 
@@ -254,7 +252,6 @@ public class Points : MonoBehaviour
                     e_unit[i].MovePoint(points[random].transform.position);
                     e_unit.Remove(e_unit[i]);
                 }
-
             }
             else if (GameManager.instance.check[0] == 1 && GameManager.instance.check[1] == 1 && GameManager.instance.check[2] == 1 && GameManager.instance.check[3] == 1 && GameManager.instance.check[4] == 1)
             {

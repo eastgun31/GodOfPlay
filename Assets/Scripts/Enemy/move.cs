@@ -4,22 +4,6 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
-    public static move instance;
-
-    public void Awake()
-    {
-        if (null == instance)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
-
     public GameObject[] points;
     public List<GameObject> units = new List<GameObject>();
     public GameObject home;
@@ -76,11 +60,6 @@ public class move : MonoBehaviour
                 E_Back();
                 break;
         }
-
-        //if(GameManager.instance.check[0] == 1)
-        //{
-        //    random = Random.Range(0, 5);
-        //}
     }
 
     void E_Idle()
