@@ -74,24 +74,24 @@ public class EnemySpawn : MonoBehaviour
             {
                 random = Random.Range(0, 4);
 
-                if (random == 0 && gold >= 5)
+                if (random == 0 && gold >= 10)
                 {
-                    gold -= 5;
+                    gold -= 10;
                     SpawnUnit(random, i);
                 }
-                if (random == 1 && gold >= 5)
+                if (random == 1 && gold >= 10)
                 {
-                    gold -= 5;
+                    gold -= 10;
                     SpawnUnit(random, i);
                 }
-                if (random == 2 && gold >= 8)
+                if (random == 2 && gold >= 16)
                 {
-                    gold -= 8;
+                    gold -= 16;
                     SpawnUnit(random, i);
                 }
-                if (random == 3 && gold >= 15)
+                if (random == 3 && gold >= 30)
                 {
-                    gold -= 15;
+                    gold -= 30;
                     SpawnUnit(random, i);
                 }
             }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.AI;
 
 public class E_unitMove : MonoBehaviour
@@ -22,16 +23,11 @@ public class E_unitMove : MonoBehaviour
     public float edefense;
     public float emoveSpeed;
 
+    public Slider Eslider;
+    public float maxhp;
     public Points point;
 
     private Animator enemyAnim;
-
-    enum EState
-    {
-        idle, go, attack, die
-    }
-
-    EState eunits;
 
     // Start is called before the first frame update
     void Start()
@@ -40,112 +36,79 @@ public class E_unitMove : MonoBehaviour
         moving = GetComponent<NavMeshAgent>();
         enemyAnim = GetComponent<Animator>();
 
-        //StartCoroutine(Pcheck());
+        maxhp = ehealth;
+       StartCoroutine(Pcheck());
     }
 
     private void FixedUpdate()
     {
         if (ehealth <= 0)
         {
-            //eunits = EState.die;
-            Invoke("E_Die", 2f);
+            Invoke("E_Die", 3f);
         }
 
+        Eslider.value = ehealth / maxhp;
     }
-
 
     // Update is called once per frame
     void Update()
     {
-        //if (ehealth <= 0)
-        //{
-        //    Invoke("E_Die", 4f);
-        //}
 
-        //switch(eunits)
-        //{
-        //    case EState.idle:
-        //        Euidle();
-        //        break;
-        //    case EState.go:
-        //        EuGo();
-        //        break;
-        //    case EState.attack:
-        //        EuAttack();
-        //        break;
-        //    case EState.die:
-        //        EuDie();
-        //        break;
-        //}
-    }
-
-    void Euidle()
-    {
-        moving.isStopped = true;
-        moving.velocity = Vector3.zero;
-    }
-    void EuGo()
-    {
-        enemyAnim.SetTrigger("run");
-    }
-    void EuAttack()
-    {
-        enemyAnim.SetTrigger("attack");
-    }
-    void EuDie()
-    {
-        enemyAnim.SetTrigger("death");
     }
 
     public void MovePoint(Vector3 i)
     {
-        if(targetUnit == null)
-        {
-            lastDesti = i;
-            moving.speed = emoveSpeed;
-            moving.SetDestination(i);
+        lastDesti = i;
+        moving.speed = emoveSpeed;
+        moving.SetDestination(i);
 
-            //eunits = EState.go;
-            enemyAnim.SetFloat("run", moving.remainingDistance);
-        }
+        enemyAnim.SetFloat("run", Vector3.Distance(transform.position,i));
 
         transform.SetParent(null);
     }
 
     public void Attakc(Vector3 dir, UnitController p_unit)
     {
+        if (ehealth <= 0)
+            return;
+
+        moving.isStopped = true;
+        moving.velocity = Vector3.zero;
+
         time += Time.deltaTime;
 
         targetUnit = p_unit;
-        moving.SetDestination(dir);
-        moving.stoppingDistance = 2f;
 
-        if (unitNum == 2 || unitNum == 6 || unitNum == 10)
+        //moving.SetDestination(dir);
+        //moving.stoppingDistance = 1f;
+
+        //if (unitNum == 2 || unitNum == 6 || unitNum == 10)
+        //{
+        //    moving.stoppingDistance = 4f;
+        //}
+
+        if(Vector3.Distance(transform.position, dir) > 2f)
         {
-            moving.stoppingDistance = 4f;
+            enemyAnim.SetFloat("run", emoveSpeed);
+            transform.position = Vector3.MoveTowards(transform.position, dir, emoveSpeed * Time.deltaTime);
         }
-
-        if (time > 1f && p_unit.uhealth > 0)
+        else if (Vector3.Distance(transform.position, dir) <= 2f && time > 1f && p_unit.uhealth > 0)
         {
-            //eunits = EState.idle;
-            moving.isStopped = true;
-            moving.velocity = Vector3.zero;
             Debug.Log("АјАн");
-            //eunits = EState.attack;
+            transform.LookAt(dir);
             enemyAnim.SetTrigger("attack");
             p_unit.uhealth -= eattackPower;
             time = 0;
         }
-
-        if (p_unit.uhealth <= 0)
+        else if (p_unit.uhealth <= 0)
         {
-            eunits = EState.idle;
             targetUnit = null;
         }
 
-        if (targetUnit == null)
+        if ( targetUnit == null)
         {
             moving.isStopped = false;
+            enemyAnim.SetFloat("run", Vector3.Distance(transform.position, lastDesti));
             moving.SetDestination(lastDesti);
         }
     }
@@ -153,13 +116,18 @@ public class E_unitMove : MonoBehaviour
 
     void E_Die()
     {
+        moving.isStopped = true;
+        moving.velocity = Vector3.zero;
+
         GameManager.instance.e_population--;
-        if(point)
+        GameManager.instance.gold += 2;
+
+        if (point)
         {
             point.e_distance = 100f;
         }
 
-        enemyAnim.SetTrigger("death");
+        //enemyAnim.SetTrigger("death");
 
         Destroy(gameObject);
     }
@@ -224,7 +192,6 @@ public class E_unitMove : MonoBehaviour
             emoveSpeed = GameManager.instance.moveSpeed + 3;
         }
 
-
         if (unitNum == 8)
         {
             ehealth = GameManager.instance.health + 100;
@@ -259,17 +226,23 @@ public class E_unitMove : MonoBehaviour
     {
         if (ehealth <= 0)
         {
-            GameManager.instance.e_population--;
-            if (point)
-            {
-                point.e_distance = 100f;
-            }
-
             enemyAnim.SetTrigger("death");
 
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(1.5f);
 
-            Destroy(gameObject);
+            StopCoroutine(Pcheck());
+
+            //GameManager.instance.e_population--;
+            //if (point)
+            //{
+            //    point.e_distance = 100f;
+            //}
+
+            //enemyAnim.SetTrigger("death");
+
+            //yield return new WaitForSeconds(4f);
+
+            //Destroy(gameObject);
         }
 
         yield return new WaitForSeconds(1f);

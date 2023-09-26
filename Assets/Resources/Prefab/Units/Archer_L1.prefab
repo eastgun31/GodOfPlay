@@ -880,7 +880,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
-  m_Acceleration: 20
+  m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -1695,7 +1695,7 @@ Transform:
   - {fileID: 4554398382176959353}
   m_Father: {fileID: 497262}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -2.0309422, y: 2.7364492, z: 173.82527}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6856894396404676854
 GameObject:
   m_ObjectHideFlags: 0

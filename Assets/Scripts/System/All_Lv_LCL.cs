@@ -9,8 +9,6 @@ public class All_Lv_LCL : MonoBehaviour
     private int Gold;
     private int U;
 
-    public GameObject swordPosition;//
-
     public Vector3 warrio_spawnPosition;
     public Vector3 shield_spawnPosition;
     public Vector3 Archer_spawnPosition;
@@ -47,6 +45,11 @@ public class All_Lv_LCL : MonoBehaviour
     public Button UpButton2L; //본부 2레벨로 업그레이드 시키는 버튼
     public Button UpButton3L; //본부 3레벨로 업그레이드 시키는 버튼
 
+    public GameObject WarrioPosition;
+    public GameObject ShieldPoaition;
+    public GameObject ArcherPoaition;
+    public GameObject HorseManPoaition;
+
     void Start()
     {
         button_warrio_1Lr.onClick.AddListener(Down_warrior_1L); //검사 1레벨 판매 버튼 클릭 연결
@@ -75,9 +78,9 @@ public class All_Lv_LCL : MonoBehaviour
         U = GameManager.instance.All_Obj;
         //warrio_spawnPosition = new Vector3(25, 0, 35);
         //warrio_spawnPosition = new Vector3(30, 0, 36); //위치 지정
-        shield_spawnPosition = new Vector3(32, 0, 34);
-        Archer_spawnPosition = new Vector3(34, 0, 32);
-        HorseMan_spawnPosition = new Vector3(36, 0, 30);
+        //shield_spawnPosition = new Vector3(32, 0, 34);
+        //Archer_spawnPosition = new Vector3(34, 0, 32);
+        //HorseMan_spawnPosition = new Vector3(36, 0, 30);
 
         button_warrio_1Lr.interactable = (Gold >= 5); //검사 1레벨 5코인이 없을 시 버튼 비활성화
         button_shield_1Lr.interactable = (Gold >= 5); //방패병 1레벨 5코인이 없을 시 버튼 비활성화
@@ -106,8 +109,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 5)
             {
                 GameManager.instance.gold -= 5;
-                GameObject newObject = Instantiate(Warrior_1L_Obj, warrio_spawnPosition, Quaternion.identity); //검사 1레벨 유닛 생성
-                newObject.transform.position = swordPosition.transform.position;
+                GameObject newObject = Instantiate(Warrior_1L_Obj, WarrioPosition.transform.position, Quaternion.identity); //검사 1레벨 유닛 생성
+               // newObject.transform.position = WarrioPosition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -124,7 +127,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 5)
             {
                 GameManager.instance.gold -= 5; //버튼을 누르면 검사 1레벨 필요 재화 5씩 없앰
-                GameObject newObject = Instantiate(Shield_1L_Obj, shield_spawnPosition, Quaternion.identity); //방패병 1레벨 유닛 생성
+                GameObject newObject = Instantiate(Shield_1L_Obj, ShieldPoaition.transform.position, Quaternion.identity); //방패병 1레벨 유닛 생성
+               // newObject.transform.position = ShieldPoaition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -140,7 +144,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 8)
             {
                 GameManager.instance.gold -= 8; //버튼을 누르면 궁수 1레벨 필요 재화 8씩 없앰
-                GameObject newObject = Instantiate(Archer_1L_Obj, Archer_spawnPosition, Quaternion.identity); //궁수 1레벨 유닛 생성
+                GameObject newObject = Instantiate(Archer_1L_Obj, ArcherPoaition.transform.position, Quaternion.identity); //궁수 1레벨 유닛 생성
+                //newObject.transform.position = ArcherPoaition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -155,7 +160,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 15)
             {
                 GameManager.instance.gold -= 15; //버튼을 누르면 기마병 1레벨 필요 재화 15씩 없앰
-                GameObject newObject = Instantiate(HorseMan_1L_Obj, HorseMan_spawnPosition, Quaternion.identity); //기마병 1레벨 유닛 생성
+                GameObject newObject = Instantiate(HorseMan_1L_Obj, HorseManPoaition.transform.position, Quaternion.identity); //기마병 1레벨 유닛 생성
+                //newObject.transform.position = HorseManPoaition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -172,7 +178,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 5)
             {
                 GameManager.instance.gold -= 5;
-                GameObject newObject = Instantiate(Warrior_2L_Obj, warrio_spawnPosition, Quaternion.identity); //검사 2레벨 유닛 생성
+                GameObject newObject = Instantiate(Warrior_2L_Obj, WarrioPosition.transform.position, Quaternion.identity); //검사 2레벨 유닛 생성
+                //newObject.transform.position = WarrioPosition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -188,7 +195,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 5)
             {
                 GameManager.instance.gold -= 5; //버튼을 누르면 검사 1레벨 필요 재화 5씩 없앰
-                GameObject newObject = Instantiate(Shield_2L_Obj, shield_spawnPosition, Quaternion.identity); //방패병 2레벨 유닛 생성
+                GameObject newObject = Instantiate(Shield_2L_Obj, ShieldPoaition.transform.position, Quaternion.identity); //방패병 2레벨 유닛 생성
+                //newObject.transform.position = ShieldPoaition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -203,7 +211,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 8)
             {
                 GameManager.instance.gold -= 8; //버튼을 누르면 궁수 1레벨 필요 재화 8씩 없앰
-                GameObject newObject = Instantiate(Archer_2L_Obj, Archer_spawnPosition, Quaternion.identity); //궁수 2레벨 유닛 생성
+                GameObject newObject = Instantiate(Archer_2L_Obj, ArcherPoaition.transform.position, Quaternion.identity); //궁수 2레벨 유닛 생성
+                //newObject.transform.position = ArcherPoaition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -218,7 +227,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 15)
             {
                 GameManager.instance.gold -= 15; //버튼을 누르면 기마병 1레벨 필요 재화 15씩 없앰
-                GameObject newObject = Instantiate(HorseMan_2L_Obj, HorseMan_spawnPosition, Quaternion.identity); //기마병 2레벨 유닛 생성
+                GameObject newObject = Instantiate(HorseMan_2L_Obj, HorseManPoaition.transform.position, Quaternion.identity); //기마병 2레벨 유닛 생성
+                //newObject.transform.position = HorseManPoaition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -235,7 +245,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 5)
             {
                 GameManager.instance.gold -= 5;
-                GameObject newObject = Instantiate(Warrior_3L_Obj, warrio_spawnPosition, Quaternion.identity); //검사 2레벨 유닛 생성
+                GameObject newObject = Instantiate(Warrior_3L_Obj, WarrioPosition.transform.position, Quaternion.identity); //검사 2레벨 유닛 생성
+                //newObject.transform.position = WarrioPosition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -251,7 +262,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 5)
             {
                 GameManager.instance.gold -= 5; //버튼을 누르면 검사 1레벨 필요 재화 5씩 없앰
-                GameObject newObject = Instantiate(Shield_3L_Obj, shield_spawnPosition, Quaternion.identity); //방패병 2레벨 유닛 생성
+                GameObject newObject = Instantiate(Shield_3L_Obj, ShieldPoaition.transform.position, Quaternion.identity); //방패병 2레벨 유닛 생성
+                //newObject.transform.position = ShieldPoaition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -266,7 +278,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 8)
             {
                 GameManager.instance.gold -= 8; //버튼을 누르면 궁수 1레벨 필요 재화 8씩 없앰
-                GameObject newObject = Instantiate(Archer_3L_Obj, Archer_spawnPosition, Quaternion.identity); //궁수 2레벨 유닛 생성
+                GameObject newObject = Instantiate(Archer_3L_Obj, ArcherPoaition.transform.position, Quaternion.identity); //궁수 2레벨 유닛 생성
+                //newObject.transform.position = ArcherPoaition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 
@@ -281,7 +294,8 @@ public class All_Lv_LCL : MonoBehaviour
             if (Gold >= 15)
             {
                 GameManager.instance.gold -= 15; //버튼을 누르면 기마병 1레벨 필요 재화 15씩 없앰
-                GameObject newObject = Instantiate(HorseMan_3L_Obj, HorseMan_spawnPosition, Quaternion.identity); //기마병 2레벨 유닛 생성
+                GameObject newObject = Instantiate(HorseMan_3L_Obj, HorseManPoaition.transform.position, Quaternion.identity); //기마병 2레벨 유닛 생성
+                //newObject.transform.position = HorseManPoaition.transform.position;
                 GameManager.instance.All_Obj++;
                 GameManager.instance.Aobj();
 

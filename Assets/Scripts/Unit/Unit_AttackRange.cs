@@ -8,7 +8,6 @@ public class Unit_AttackRange : MonoBehaviour
     E_unitMove e_unit;
     public UnitController parent;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -24,16 +23,8 @@ public class Unit_AttackRange : MonoBehaviour
             Vector3 dir = target.position;
             parent.Attack(dir, e_unit);
         }
+
     }
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.CompareTag("Enemy"))
-    //    {
-    //        StartCoroutine(Attack());
-    //    }
-
-    //}
 
     private void OnTriggerStay(Collider col)
     {
@@ -47,33 +38,12 @@ public class Unit_AttackRange : MonoBehaviour
 
     private void OnTriggerExit(Collider col)
     {
-        if(col.CompareTag("Player"))
+        if (col.CompareTag("Enemy"))
         {
             e_unit = null;
             target = null;
         }
-        //p_unit = null;
         Debug.Log("Box Enemy : Target lost");
-
-    }
-
-    IEnumerator Attack()
-    {
-        //if (Input.GetMouseButtonDown(1))
-        //{
-        //    StopCoroutine(Attack());
-        //}
-
-        if (target != null)
-        {
-            Debug.Log("Å¸°ÙÃßÀû");
-            Vector3 dir = target.position;
-            parent.Attack(dir, e_unit);
-        }
-
-        yield return new WaitForSeconds(1f);
-
-        StartCoroutine(Attack());
     }
 
 }

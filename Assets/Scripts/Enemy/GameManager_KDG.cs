@@ -20,7 +20,7 @@ public class GameManager_KDG : MonoBehaviour
     public int bCheck = 0;
     public int cCheck = 0;
 
-    public int[] check = {0, 0, 0};
+    public int[] check = { 0, 0, 0 };
 
     public bool attacking = false;
     public int attackPoint = 0;
@@ -29,12 +29,12 @@ public class GameManager_KDG : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
