@@ -50,7 +50,6 @@ public class UnitController : MonoBehaviour
 
     }
 
-
     public void SelectUnit()
     {
         unitMarker.SetActive(true);
@@ -86,6 +85,7 @@ public class UnitController : MonoBehaviour
             return;
 
         time += Time.deltaTime;
+        float attackspeed = umoveSpeed;
 
         //targetUnit = e_unit;
         //navMeshAgent.SetDestination(dir);
@@ -98,12 +98,13 @@ public class UnitController : MonoBehaviour
 
         if (Vector3.Distance(transform.position, dir) > 2f)
         {
-            transform.position = Vector3.MoveTowards(transform.position, dir, umoveSpeed * Time.deltaTime);
-            playerAnim.SetFloat("run", umoveSpeed);
+            transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
+            playerAnim.SetFloat("run", attackspeed);
         }
-        else if (time > 1f && e_unit.ehealth > 0)
+        else if (Vector3.Distance(transform.position, dir) <= 2f  && time > 1f && e_unit.ehealth > 0)
         {
             transform.LookAt(dir);
+            attackspeed = 0;
             Debug.Log("РћАјАн");
             playerAnim.SetTrigger("attack");
             e_unit.ehealth -= uattackPower;

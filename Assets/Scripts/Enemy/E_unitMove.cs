@@ -72,6 +72,7 @@ public class E_unitMove : MonoBehaviour
         if (ehealth <= 0)
             return;
 
+        float attackspeed = emoveSpeed;
         moving.isStopped = true;
         moving.velocity = Vector3.zero;
 
@@ -94,7 +95,10 @@ public class E_unitMove : MonoBehaviour
         }
         else if (Vector3.Distance(transform.position, dir) <= 2f && time > 1f && p_unit.uhealth > 0)
         {
+            transform.LookAt(dir);
             Debug.Log("АјАн");
+            rigid.velocity = Vector3.zero;
+            rigid.angularVelocity = Vector3.zero;
             transform.LookAt(dir);
             enemyAnim.SetTrigger("attack");
             p_unit.uhealth -= eattackPower;
