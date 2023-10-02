@@ -10,6 +10,7 @@ public class UnitController : MonoBehaviour
     private GameObject unitMarker;
     private NavMeshAgent navMeshAgent;
     private Animator playerAnim;
+    private Rigidbody rigid;
 
     public int unitnumber = 0;
 
@@ -34,6 +35,7 @@ public class UnitController : MonoBehaviour
     {
         StartCoroutine(Pcheck());
         playerAnim = GetComponent<Animator>();
+        rigid = GetComponent<Rigidbody>();
         maxhp = uhealth;
     }
 
@@ -68,7 +70,7 @@ public class UnitController : MonoBehaviour
 
     void Update()
     {
-
+        time += Time.deltaTime;
     }
 
     void RemoveList()
@@ -84,31 +86,39 @@ public class UnitController : MonoBehaviour
         if (uhealth <= 0)
             return;
 
-        time += Time.deltaTime;
+        //time += Time.deltaTime;
         float attackspeed = umoveSpeed;
 
-        //targetUnit = e_unit;
-        //navMeshAgent.SetDestination(dir);
-        //navMeshAgent.stoppingDistance = 2f;
+        targetUnit = e_unit;
+        navMeshAgent.SetDestination(dir);
+        navMeshAgent.stoppingDistance = 2f;
 
         //if (unitnumber == 2 || unitnumber == 6 || unitnumber == 10)
         //{
         //    navMeshAgent.stoppingDistance = 4f;
         //}
 
-        if (Vector3.Distance(transform.position, dir) > 2f)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
-            playerAnim.SetFloat("run", attackspeed);
-        }
-        else if (Vector3.Distance(transform.position, dir) <= 2f  && time > 1f && e_unit.ehealth > 0)
+        //transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
+        //playerAnim.SetFloat("run", attackspeed);
+
+        if (Vector3.Distance(transform.position, dir) <= 3f && e_unit.ehealth > 0)
         {
             transform.LookAt(dir);
             attackspeed = 0;
-            Debug.Log("적공격");
-            playerAnim.SetTrigger("attack");
-            e_unit.ehealth -= uattackPower;
-            time = 0;
+            rigid.velocity = Vector3.zero;
+            if(time > 1f)
+            {
+                time = 0;
+                Debug.Log("적공격");
+                playerAnim.SetTrigger("attack");
+                e_unit.ehealth -= uattackPower;
+            }
+        }
+        else if(Vector3.Distance(transform.position, dir) > 3f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
+            attackspeed = umoveSpeed;
+            playerAnim.SetFloat("run", attackspeed);
         }
         else if (e_unit.ehealth <= 0)
         {

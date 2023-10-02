@@ -53,7 +53,7 @@ public class E_unitMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        time += Time.deltaTime;
     }
 
     public void MovePoint(Vector3 i)
@@ -76,7 +76,7 @@ public class E_unitMove : MonoBehaviour
         moving.isStopped = true;
         moving.velocity = Vector3.zero;
 
-        time += Time.deltaTime;
+        //time += Time.deltaTime;
 
         targetUnit = p_unit;
 
@@ -88,21 +88,29 @@ public class E_unitMove : MonoBehaviour
         //    moving.stoppingDistance = 4f;
         //}
 
-        if(Vector3.Distance(transform.position, dir) > 2f)
-        {
-            enemyAnim.SetFloat("run", emoveSpeed);
-            transform.position = Vector3.MoveTowards(transform.position, dir, emoveSpeed * Time.deltaTime);
-        }
-        else if (Vector3.Distance(transform.position, dir) <= 2f && time > 1f && p_unit.uhealth > 0)
+        //enemyAnim.SetFloat("run", emoveSpeed);
+        //transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
+
+        if (Vector3.Distance(transform.position, dir) <= 3f && p_unit.uhealth > 0)
         {
             transform.LookAt(dir);
-            Debug.Log("공격");
+            attackspeed = 0;
             rigid.velocity = Vector3.zero;
-            rigid.angularVelocity = Vector3.zero;
-            transform.LookAt(dir);
-            enemyAnim.SetTrigger("attack");
-            p_unit.uhealth -= eattackPower;
-            time = 0;
+            if(time > 1f)
+            {
+                time = 0;
+                Debug.Log("공격");
+                enemyAnim.SetTrigger("attack");
+                p_unit.uhealth -= eattackPower;
+            }
+            //rigid.velocity = Vector3.zero;
+            //rigid.angularVelocity = Vector3.zero;
+        }
+        else if(Vector3.Distance(transform.position, dir) > 3f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
+            attackspeed = emoveSpeed;
+            enemyAnim.SetFloat("run", attackspeed);
         }
         else if (p_unit.uhealth <= 0)
         {

@@ -26,7 +26,7 @@ public class t_Emove : MonoBehaviour
         if(Vector3.Distance(transform.position, target) <= 2f)
         {
             speed = 0;
-            if(time > 5f)
+            if(time > 2f)
             {
                 time = 0;
                 targetUnit.health -= 10f;
