@@ -21,7 +21,7 @@ public class t_range : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
+        //time += Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -44,14 +44,16 @@ public class t_range : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (time > 5f)
+            time += Time.deltaTime;
+
+            if (time > 1f)
             {
                 time = 0;
+                target = other.transform.position;
+                targetUnit = other.GetComponent<t_move>();
+                parent.Attack(target,targetUnit);
             }
 
-            target = other.transform.position;
-            targetUnit = other.GetComponent<t_move>();
-            parent.Attack(target,targetUnit);
         }
     }
 }

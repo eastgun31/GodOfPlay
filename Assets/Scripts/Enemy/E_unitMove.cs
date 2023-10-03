@@ -29,6 +29,13 @@ public class E_unitMove : MonoBehaviour
 
     private Animator enemyAnim;
 
+    enum E_UnitState
+    {
+        Battle, Idle, find_target
+    }
+
+    E_UnitState e_unitBattle;
+
     // Start is called before the first frame update
     void Start()
     {
