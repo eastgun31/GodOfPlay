@@ -23,6 +23,8 @@ public class E_unitMove : MonoBehaviour
     public float edefense;
     public float emoveSpeed;
 
+    float attackspeed;
+
     public Slider Eslider;
     public float maxhp;
     public Points point;
@@ -79,13 +81,14 @@ public class E_unitMove : MonoBehaviour
         if (ehealth <= 0)
             return;
 
-        float attackspeed = emoveSpeed;
-        moving.isStopped = true;
-        moving.velocity = Vector3.zero;
-
-        //time += Time.deltaTime;
+        
+        //moving.isStopped = true;
+        //moving.velocity = Vector3.zero;
 
         targetUnit = p_unit;
+        Find_Target(dir, p_unit);
+
+        //Find_Target(dir, p_unit);
 
         //moving.SetDestination(dir);
         //moving.stoppingDistance = 1f;
@@ -98,40 +101,100 @@ public class E_unitMove : MonoBehaviour
         //enemyAnim.SetFloat("run", emoveSpeed);
         //transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, dir) <= 3f && p_unit.uhealth > 0)
-        {
-            transform.LookAt(dir);
-            attackspeed = 0;
-            rigid.velocity = Vector3.zero;
-            if(time > 1f)
-            {
-                time = 0;
-                Debug.Log("공격");
-                enemyAnim.SetTrigger("attack");
-                p_unit.uhealth -= eattackPower;
-            }
+        //if (Vector3.Distance(transform.position, dir) <= 3f && p_unit.uhealth > 0)
+        //{
+        //    transform.LookAt(dir);
+        //    attackspeed = 0;
+        //    //rigid.velocity = Vector3.zero;
+
+        //    StartCoroutine(Damage(p_unit));
+
+            //if(time > 1f)
+            //{
+            //    time = 0;
+            //    Debug.Log("공격");
+            //    enemyAnim.SetTrigger("attack");
+            //    p_unit.uhealth -= eattackPower;
+            //}
             //rigid.velocity = Vector3.zero;
             //rigid.angularVelocity = Vector3.zero;
+        //}
+        //else if(Vector3.Distance(transform.position, dir) > 3f && p_unit.uhealth > 0)
+        //{
+        //    attackspeed = emoveSpeed;
+        //    transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
+        //    enemyAnim.SetFloat("run", attackspeed);
+        //}
+        //else if (p_unit.uhealth <= 0)
+        //{
+        //    targetUnit = null;
+        //}
+
+        //if ( targetUnit == null)
+        //{
+        //    Debug.Log("다시 출발");
+        //    moving.isStopped = false;
+        //    enemyAnim.SetFloat("run", Vector3.Distance(transform.position, lastDesti));
+        //    moving.SetDestination(lastDesti);
+        //}
+    }
+
+    void Find_Target(Vector3 dir, UnitController p_unit)
+    {
+        //attackspeed = emoveSpeed;
+        //transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
+
+        //moving.isStopped = false;
+        moving.SetDestination(dir);
+        moving.stoppingDistance = 2f;
+
+        if (Vector3.Distance(transform.position, dir) <= 3f && p_unit.uhealth > 0)
+        {
+            moving.isStopped = true;
+            moving.velocity = Vector3.zero;
+
+            transform.LookAt(dir);
+            
+            StartCoroutine(Damage(p_unit));
         }
         else if(Vector3.Distance(transform.position, dir) > 3f)
         {
-            transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
-            attackspeed = emoveSpeed;
+            moving.isStopped = false;
+            moving.SetDestination(dir);
+            moving.stoppingDistance = 2f;
             enemyAnim.SetFloat("run", attackspeed);
+        }
+    }
+
+    IEnumerator Damage(UnitController p_unit)
+    {
+        if (p_unit.uhealth > 0 && time > 1f)
+        {
+            time = 0;
+            enemyAnim.SetTrigger("attack");
+            p_unit.uhealth -= 10f;
+            Debug.Log("공격");
+
+            yield return new WaitForSeconds(1f);
+
+            StartCoroutine(Damage(p_unit));
         }
         else if (p_unit.uhealth <= 0)
         {
             targetUnit = null;
-        }
+            Debug.Log("적 죽음");
 
-        if ( targetUnit == null)
-        {
-            moving.isStopped = false;
-            enemyAnim.SetFloat("run", Vector3.Distance(transform.position, lastDesti));
-            moving.SetDestination(lastDesti);
+            if (targetUnit == null && ehealth > 0)
+            {
+                Debug.Log("다시 출발");
+                moving.isStopped = false;
+                enemyAnim.SetFloat("run", Vector3.Distance(transform.position, lastDesti));
+                moving.SetDestination(lastDesti);
+            }
+
+            StopCoroutine("Damage");
         }
     }
-
 
     void E_Die()
     {

@@ -96,9 +96,10 @@ public class t_Emove : MonoBehaviour
 
     IEnumerator E_Battle(t_move targets)
     {
-        if(targets.health > 0)
+        if(targets.health > 0 && time > 1f)
         {
-            targets.health -= 5f;
+            time = 0;
+            targets.health -= 10f;
             Debug.Log("АјАн");
 
             yield return new WaitForSeconds(1f);

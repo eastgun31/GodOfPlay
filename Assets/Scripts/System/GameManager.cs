@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public int health = 100;
     public int attackPower = 10;
     public int defense = 3;
-    public float moveSpeed = 7;
+    public float moveSpeed = 5;
 
     public Text Allgold_text; //현재 재화 상태
     public int gold = 1000; //초기 재화 + 

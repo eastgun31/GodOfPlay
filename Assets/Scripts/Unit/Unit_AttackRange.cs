@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Unit_AttackRange : MonoBehaviour
 {
-    Transform target;
-    E_unitMove e_unit;
+    public Vector3 target;
+    public List<GameObject> targets = new List<GameObject>();
+
+    //Transform target;
+    public E_unitMove e_unit;
     public UnitController parent;
 
     // Start is called before the first frame update
@@ -17,33 +20,57 @@ public class Unit_AttackRange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target != null)
+        if (targets != null)
         {
-            Debug.Log("鸥百眠利");
-            Vector3 dir = target.position;
-            parent.Attack(dir, e_unit);
+            for (int i = 0; i < targets.Count; i++)
+            {
+                target = targets[i].transform.position;
+                e_unit = targets[i].GetComponent<E_unitMove>();
+                if (e_unit.ehealth > 0)
+                {
+                    parent.Attack(target, e_unit);
+                }
+                else if (e_unit.ehealth <= 0)
+                {
+                    targets.Remove(targets[i]);
+                }
+            }
         }
+
+        //if (target != null)
+        //{
+        //    Debug.Log("鸥百眠利");
+        //    Vector3 dir = target.position;
+        //    parent.Attack(dir, e_unit);
+        //}
 
     }
 
-    private void OnTriggerStay(Collider col)
+    private void OnTriggerEnter(Collider col)
     {
         if (col.CompareTag("Enemy"))
         {
-            target = col.gameObject.transform;
-
-            e_unit = col.gameObject.GetComponent<E_unitMove>();
+            targets.Add(col.gameObject);
         }
     }
+
+    //private void OnTriggerStay(Collider col)
+    //{
+    //    if (col.CompareTag("Enemy"))
+    //    {
+    //        target = col.gameObject.transform;
+
+    //        e_unit = col.gameObject.GetComponent<E_unitMove>();
+    //    }
+    //}
 
     private void OnTriggerExit(Collider col)
     {
         if (col.CompareTag("Enemy"))
         {
-            e_unit = null;
-            target = null;
+            targets.Remove(col.gameObject);
+            //target = null;
         }
-        Debug.Log("Box Enemy : Target lost");
     }
 
 }

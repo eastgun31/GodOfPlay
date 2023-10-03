@@ -19,6 +19,8 @@ public class UnitController : MonoBehaviour
     public float udefense;
     public float umoveSpeed;
 
+    float attackspeed;
+
     float time = 3f;    //공격 쿨타임
     public E_unitMove targetUnit;   //공격할 유닛
     public Points point; // 점령중인 거점
@@ -87,11 +89,13 @@ public class UnitController : MonoBehaviour
             return;
 
         //time += Time.deltaTime;
-        float attackspeed = umoveSpeed;
+        //float attackspeed = umoveSpeed;
 
         targetUnit = e_unit;
-        navMeshAgent.SetDestination(dir);
-        navMeshAgent.stoppingDistance = 2f;
+        //navMeshAgent.isStopped = true;
+        //navMeshAgent.velocity = Vector3.zero;
+
+        Find_Target(dir, e_unit);
 
         //if (unitnumber == 2 || unitnumber == 6 || unitnumber == 10)
         //{
@@ -101,30 +105,84 @@ public class UnitController : MonoBehaviour
         //transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
         //playerAnim.SetFloat("run", attackspeed);
 
+        //if (Vector3.Distance(transform.position, dir) <= 3f && e_unit.ehealth > 0)
+        //{
+        //    transform.LookAt(dir);
+        //    attackspeed = 0;
+
+        //    StartCoroutine(Damage(e_unit));
+        //    //rigid.velocity = Vector3.zero;
+        //    //if(time > 1f)
+        //    //{
+        //    //    time = 0;
+        //    //    Debug.Log("적공격");
+        //    //    playerAnim.SetTrigger("attack");
+        //    //    e_unit.ehealth -= uattackPower;
+        //    //}
+        //}
+        //else if(Vector3.Distance(transform.position, dir) > 3f)
+        //{
+        //    transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
+        //    attackspeed = umoveSpeed;
+        //    playerAnim.SetFloat("run", attackspeed);
+        //}
+        //else if (e_unit.ehealth <= 0)
+        //{
+        //    targetUnit = null;
+        //}
+    }
+
+    void Find_Target(Vector3 dir, E_unitMove e_unit)
+    {
+        //attackspeed = umoveSpeed;
+        //transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
+
+        //navMeshAgent.isStopped = false;
+        navMeshAgent.SetDestination(dir);
+        navMeshAgent.stoppingDistance = 2f;
+
         if (Vector3.Distance(transform.position, dir) <= 3f && e_unit.ehealth > 0)
         {
+            navMeshAgent.isStopped = true;
+            navMeshAgent.velocity = Vector3.zero;
+
             transform.LookAt(dir);
-            attackspeed = 0;
-            rigid.velocity = Vector3.zero;
-            if(time > 1f)
-            {
-                time = 0;
-                Debug.Log("적공격");
-                playerAnim.SetTrigger("attack");
-                e_unit.ehealth -= uattackPower;
-            }
+            //time = 0;
+            StartCoroutine(Damage(e_unit));
         }
-        else if(Vector3.Distance(transform.position, dir) > 3f)
+        else if (Vector3.Distance(transform.position, dir) > 3f)
         {
-            transform.position = Vector3.MoveTowards(transform.position, dir, attackspeed * Time.deltaTime);
-            attackspeed = umoveSpeed;
+            navMeshAgent.isStopped = false;
+            navMeshAgent.SetDestination(dir);
+            navMeshAgent.stoppingDistance = 2f;
+
             playerAnim.SetFloat("run", attackspeed);
+        }
+    }
+
+
+    IEnumerator Damage(E_unitMove e_unit)
+    {
+        if (e_unit.ehealth > 0 && time > 2f)
+        {
+            time = 0;
+            playerAnim.SetTrigger("attack");
+            e_unit.ehealth -= 10f;
+            Debug.Log("적 공격");
+
+            yield return new WaitForSeconds(1f);
+
+            StartCoroutine(Damage(e_unit));
         }
         else if (e_unit.ehealth <= 0)
         {
             targetUnit = null;
+            Debug.Log("적들 죽음");
+
+            StopCoroutine("Damage");
         }
     }
+
 
     void P_Die()    //플레이어 유닛 죽음
     {
