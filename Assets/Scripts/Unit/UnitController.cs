@@ -47,10 +47,10 @@ public class UnitController : MonoBehaviour
 
         Uslider.value = uhealth / maxhp;
 
-        if (uhealth <= 0)
-        {
-            Invoke("P_Die", 3f);
-        }
+        //if (uhealth <= 0)
+        //{
+        //    Invoke("P_Die", 3f);
+        //}
 
     }
 
@@ -91,11 +91,15 @@ public class UnitController : MonoBehaviour
         //time += Time.deltaTime;
         //float attackspeed = umoveSpeed;
 
-        targetUnit = e_unit;
+        
         //navMeshAgent.isStopped = true;
         //navMeshAgent.velocity = Vector3.zero;
 
-        Find_Target(dir, e_unit);
+        if(e_unit.ehealth>0)
+        {
+            targetUnit = e_unit;
+            Find_Target(dir, e_unit);
+        }
 
         //if (unitnumber == 2 || unitnumber == 6 || unitnumber == 10)
         //{
@@ -141,6 +145,11 @@ public class UnitController : MonoBehaviour
         navMeshAgent.SetDestination(dir);
         navMeshAgent.stoppingDistance = 2f;
 
+        if(e_unit.ehealth <= 0)
+        {
+            targetUnit = null;
+        }
+
         if (Vector3.Distance(transform.position, dir) <= 3f && e_unit.ehealth > 0)
         {
             navMeshAgent.isStopped = true;
@@ -174,11 +183,12 @@ public class UnitController : MonoBehaviour
 
             StartCoroutine(Damage(e_unit));
         }
-        else if (e_unit.ehealth <= 0)
+
+        if (e_unit.ehealth <= 0)
         {
             targetUnit = null;
             Debug.Log("Àûµé Á×À½");
-
+            navMeshAgent.isStopped = false;
             StopCoroutine("Damage");
         }
     }
@@ -351,20 +361,25 @@ public class UnitController : MonoBehaviour
     {
         if (uhealth <= 0)
         {
-            //RTSUnitController.instance.UnitList.Remove(this);
-            //RTSUnitController.instance.selectedUnitList.Remove(this);
+            navMeshAgent.isStopped = true;
+            navMeshAgent.velocity = Vector3.zero;
 
-            //GameManager.instance.All_Obj--;
-            //GameManager.instance.Aobj();
-            //EnemySpawn.instance.gold += 2; //¾Æ±º À¯´Ö Á×¿´À» ¶§ Àû ÀçÈ­ È¹µæ
+            RTSUnitController.instance.UnitList.Remove(this);
+            RTSUnitController.instance.selectedUnitList.Remove(this);
 
-            //if (point)
-            //{
-            //    point.p_distance = 100f;
-            //}
+            GameManager.instance.All_Obj--;
+            GameManager.instance.Aobj();
+            EnemySpawn.instance.gold += 2; //¾Æ±º À¯´Ö Á×¿´À» ¶§ Àû ÀçÈ­ È¹µæ
+
+            if (point)
+            {
+                point.p_distance = 100f;
+            }
 
             playerAnim.SetTrigger("death");
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(3f);
+
+            Destroy(gameObject);
             StopCoroutine(Pcheck());
         }
 

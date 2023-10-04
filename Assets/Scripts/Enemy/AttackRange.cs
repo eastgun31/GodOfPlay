@@ -26,12 +26,13 @@ public class AttackRange : MonoBehaviour
             {
                 target = targets[i].transform.position;
                 p_unit = targets[i].GetComponent<UnitController>();
-                if (p_unit.uhealth > 0)
+                if (p_unit.uhealth > 0 && parent.ehealth > 0)
                 {
                     parent.Attakc(target, p_unit);
                 }
-                else if(p_unit.uhealth <= 0)
+                if(p_unit.uhealth <= 0)
                 {
+                    p_unit = null;
                     targets.Remove(targets[i]);
                 }
             }
@@ -76,7 +77,7 @@ public class AttackRange : MonoBehaviour
         {
             targets.Remove(col.gameObject);
             //target = null;
-            //p_unit = null;
+            p_unit = null;
         }
         //Debug.Log("Box Enemy : Target lost");
     }

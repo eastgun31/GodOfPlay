@@ -51,10 +51,10 @@ public class E_unitMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (ehealth <= 0)
-        {
-            Invoke("E_Die", 3f);
-        }
+        //if (ehealth <= 0)
+        //{
+        //    Invoke("E_Die", 3f);
+        //}
 
         Eslider.value = ehealth / maxhp;
     }
@@ -80,13 +80,15 @@ public class E_unitMove : MonoBehaviour
     {
         if (ehealth <= 0)
             return;
-
         
         //moving.isStopped = true;
         //moving.velocity = Vector3.zero;
 
-        targetUnit = p_unit;
-        Find_Target(dir, p_unit);
+        if(p_unit.uhealth > 0)
+        {
+            targetUnit = p_unit;
+            Find_Target(dir, p_unit);
+        }
 
         //Find_Target(dir, p_unit);
 
@@ -148,6 +150,11 @@ public class E_unitMove : MonoBehaviour
         moving.SetDestination(dir);
         moving.stoppingDistance = 2f;
 
+        if (p_unit.uhealth <= 0)
+        {
+            targetUnit = null;
+        }
+
         if (Vector3.Distance(transform.position, dir) <= 3f && p_unit.uhealth > 0)
         {
             moving.isStopped = true;
@@ -168,7 +175,7 @@ public class E_unitMove : MonoBehaviour
 
     IEnumerator Damage(UnitController p_unit)
     {
-        if (p_unit.uhealth > 0 && time > 1f)
+        if (p_unit.uhealth > 0 && time > 2f)
         {
             time = 0;
             enemyAnim.SetTrigger("attack");
@@ -179,7 +186,8 @@ public class E_unitMove : MonoBehaviour
 
             StartCoroutine(Damage(p_unit));
         }
-        else if (p_unit.uhealth <= 0)
+
+        if (p_unit.uhealth <= 0)
         {
             targetUnit = null;
             Debug.Log("Àû Á×À½");
@@ -308,9 +316,22 @@ public class E_unitMove : MonoBehaviour
     {
         if (ehealth <= 0)
         {
+            moving.isStopped = true;
+            moving.velocity = Vector3.zero;
+
+            GameManager.instance.e_population--;
+            GameManager.instance.gold += 2;
+
+            if (point)
+            {
+                point.e_distance = 100f;
+            }
+
             enemyAnim.SetTrigger("death");
 
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(3f);
+
+            Destroy(gameObject);
 
             StopCoroutine(Pcheck());
 

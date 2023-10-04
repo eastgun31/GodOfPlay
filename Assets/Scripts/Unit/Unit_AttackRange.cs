@@ -26,12 +26,13 @@ public class Unit_AttackRange : MonoBehaviour
             {
                 target = targets[i].transform.position;
                 e_unit = targets[i].GetComponent<E_unitMove>();
-                if (e_unit.ehealth > 0)
+                if (e_unit.ehealth > 0 && parent.uhealth > 0)
                 {
                     parent.Attack(target, e_unit);
                 }
-                else if (e_unit.ehealth <= 0)
+                if (e_unit.ehealth <= 0)
                 {
+                    e_unit = null;
                     targets.Remove(targets[i]);
                 }
             }
@@ -69,7 +70,7 @@ public class Unit_AttackRange : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             targets.Remove(col.gameObject);
-            //target = null;
+            e_unit = null;
         }
     }
 
