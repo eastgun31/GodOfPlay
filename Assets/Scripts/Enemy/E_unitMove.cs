@@ -31,16 +31,17 @@ public class E_unitMove : MonoBehaviour
 
     private Animator enemyAnim;
 
-    enum E_UnitState
+    public enum E_UnitState
     {
-        Battle, Idle, find_target
+        Battle, Idle, goPoint, noBattle
     }
 
-    E_UnitState e_unitBattle;
+    public E_UnitState e_State;
 
     // Start is called before the first frame update
     void Start()
     {
+        e_State = E_UnitState.noBattle;
         rigid = GetComponent<Rigidbody>();
         moving = GetComponent<NavMeshAgent>();
         enemyAnim = GetComponent<Animator>();
@@ -63,6 +64,34 @@ public class E_unitMove : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
+
+        switch(e_State)
+        {
+            case E_UnitState.Idle:
+                E_Idle();
+                    break;
+            case E_UnitState.goPoint:
+                E_GoPoint();
+                    break;
+        }
+
+        enemyAnim.SetFloat("run", moving.desiredVelocity.magnitude);
+    }
+
+    void E_Idle()
+    {
+        time = 0;
+        if(time > 3f)
+        {
+            time = 0;
+            e_State = E_UnitState.goPoint;
+        }
+    }
+
+    void E_GoPoint()
+    {
+        MovePoint(lastDesti);
+        e_State = E_UnitState.noBattle;
     }
 
     public void MovePoint(Vector3 i)
@@ -175,7 +204,7 @@ public class E_unitMove : MonoBehaviour
 
     IEnumerator Damage(UnitController p_unit)
     {
-        if (p_unit.uhealth > 0 && time > 2f)
+        if (p_unit.uhealth > 0 && time > 2f && e_State == E_UnitState.Battle)
         {
             time = 0;
             enemyAnim.SetTrigger("attack");
@@ -189,6 +218,7 @@ public class E_unitMove : MonoBehaviour
 
         if (p_unit.uhealth <= 0)
         {
+            e_State = E_UnitState.Idle;
             targetUnit = null;
             Debug.Log("Àû Á×À½");
 

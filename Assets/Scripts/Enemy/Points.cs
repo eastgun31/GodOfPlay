@@ -62,7 +62,7 @@ public class Points : MonoBehaviour
         if (other.tag == "Enemy")
         {
             e_unit.Add(other.gameObject.GetComponent<E_unitMove>());
-
+            
             StartCoroutine("eUnitNewPoint", other.gameObject);
             random = Random.Range(0, 5);
         }

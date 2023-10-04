@@ -29,11 +29,13 @@ public class AttackRange : MonoBehaviour
                 if (p_unit.uhealth > 0 && parent.ehealth > 0)
                 {
                     parent.Attakc(target, p_unit);
+                    parent.e_State = E_unitMove.E_UnitState.Battle;
                 }
                 if(p_unit.uhealth <= 0)
                 {
                     p_unit = null;
                     targets.Remove(targets[i]);
+                    parent.e_State = E_unitMove.E_UnitState.Idle;
                 }
             }
         }

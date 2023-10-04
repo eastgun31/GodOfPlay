@@ -28,6 +28,14 @@ public class UnitController : MonoBehaviour
     public Slider Uslider;
     public float maxhp;
 
+    public enum unitState //À¯´Ö»óÅÂ¸Ó½Å
+    {
+        Battle, Idle, goPoint
+    }
+
+    public unitState u_State;
+
+
     private void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -66,13 +74,44 @@ public class UnitController : MonoBehaviour
 
     public void MoveTo(Vector3 end)
     {
-        playerAnim.SetFloat("run", navMeshAgent.velocity.magnitude);
+        //playerAnim.SetFloat("run", navMeshAgent.velocity.magnitude);
         navMeshAgent.SetDestination(end);
     }
 
     void Update()
     {
         time += Time.deltaTime;
+
+        switch (u_State)
+        {
+            case unitState.Idle:
+                U_Idle();
+                break;
+            case unitState.goPoint:
+                U_GoPoint();
+                break;
+        }
+
+        playerAnim.SetFloat("run", navMeshAgent.velocity.magnitude);
+    }
+
+    void U_Idle()
+    {
+        time = 0;
+
+        targetUnit = null;
+        navMeshAgent.isStopped = false;
+
+        if(time > 2)
+        {
+            time = 0;
+            StopAllCoroutines();
+        }
+    }
+
+    void U_GoPoint()
+    {
+
     }
 
     void RemoveList()
@@ -165,14 +204,14 @@ public class UnitController : MonoBehaviour
             navMeshAgent.SetDestination(dir);
             navMeshAgent.stoppingDistance = 2f;
 
-            playerAnim.SetFloat("run", attackspeed);
+            //playerAnim.SetFloat("run", attackspeed);
         }
     }
 
 
     IEnumerator Damage(E_unitMove e_unit)
     {
-        if (e_unit.ehealth > 0 && time > 2f)
+        if (e_unit.ehealth > 0 && time > 2f && u_State == unitState.Battle)
         {
             time = 0;
             playerAnim.SetTrigger("attack");
@@ -186,6 +225,7 @@ public class UnitController : MonoBehaviour
 
         if (e_unit.ehealth <= 0)
         {
+            u_State = unitState.Idle;
             targetUnit = null;
             Debug.Log("Àûµé Á×À½");
             navMeshAgent.isStopped = false;
