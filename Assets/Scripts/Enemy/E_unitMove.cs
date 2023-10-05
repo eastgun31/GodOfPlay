@@ -11,7 +11,7 @@ public class E_unitMove : MonoBehaviour
 
     float speed = 7f;
     public float health;
-    float time = 3f;
+    float time = 0;
     Rigidbody rigid;
 
     NavMeshAgent moving;
@@ -81,11 +81,14 @@ public class E_unitMove : MonoBehaviour
     void E_Idle()
     {
         time = 0;
-        if(time > 3f)
-        {
-            time = 0;
-            e_State = E_UnitState.goPoint;
-        }
+        moving.isStopped = false;
+        e_State = E_UnitState.goPoint;
+
+        //if (time > 3f)
+        //{
+        //    time = 0;
+        //    e_State = E_UnitState.goPoint;
+        //}
     }
 
     void E_GoPoint()
@@ -189,9 +192,9 @@ public class E_unitMove : MonoBehaviour
             moving.isStopped = true;
             moving.velocity = Vector3.zero;
 
-            transform.LookAt(dir);
+            //transform.LookAt(dir);
             
-            StartCoroutine(Damage(p_unit));
+            StartCoroutine(Damage(dir, p_unit));
         }
         else if(Vector3.Distance(transform.position, dir) > 3f)
         {
@@ -202,18 +205,19 @@ public class E_unitMove : MonoBehaviour
         }
     }
 
-    IEnumerator Damage(UnitController p_unit)
+    IEnumerator Damage(Vector3 dir, UnitController p_unit)
     {
         if (p_unit.uhealth > 0 && time > 2f && e_State == E_UnitState.Battle)
         {
             time = 0;
+            transform.LookAt(dir);
             enemyAnim.SetTrigger("attack");
             p_unit.uhealth -= 10f;
             Debug.Log("АјАн");
 
             yield return new WaitForSeconds(1f);
 
-            StartCoroutine(Damage(p_unit));
+            StartCoroutine(Damage(dir, p_unit));
         }
 
         if (p_unit.uhealth <= 0)
@@ -352,30 +356,20 @@ public class E_unitMove : MonoBehaviour
             GameManager.instance.e_population--;
             GameManager.instance.gold += 2;
 
-            if (point)
-            {
-                point.e_distance = 100f;
-            }
 
             enemyAnim.SetTrigger("death");
 
             yield return new WaitForSeconds(3f);
 
+            if (point)
+            {
+                point.e_distance = 100f;
+            }
+
             Destroy(gameObject);
 
             StopCoroutine(Pcheck());
 
-            //GameManager.instance.e_population--;
-            //if (point)
-            //{
-            //    point.e_distance = 100f;
-            //}
-
-            //enemyAnim.SetTrigger("death");
-
-            //yield return new WaitForSeconds(4f);
-
-            //Destroy(gameObject);
         }
 
         yield return new WaitForSeconds(1f);
@@ -388,6 +382,13 @@ public class E_unitMove : MonoBehaviour
         if (other.CompareTag("Point"))
         {
             point = other.GetComponent<Points>();
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Point"))
+        {
+            point.e_distance = 100f;
         }
     }
 

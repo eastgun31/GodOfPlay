@@ -83,6 +83,15 @@ public class Points : MonoBehaviour
         if (other.tag == "Enemy")
         {
             e_distance = Vector3.Distance(other.transform.position, transform.position);
+
+            for (int i = 0; i < e_unit.Count; i++)
+            {
+                if(e_unit[i].ehealth <= 0)
+                {
+                    e_unit.Remove(e_unit[i]);
+                }
+            }
+
         }
         if (other.tag == "Player")
         {

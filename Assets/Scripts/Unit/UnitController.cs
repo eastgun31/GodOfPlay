@@ -194,9 +194,9 @@ public class UnitController : MonoBehaviour
             navMeshAgent.isStopped = true;
             navMeshAgent.velocity = Vector3.zero;
 
-            transform.LookAt(dir);
+            //transform.LookAt(dir);
             //time = 0;
-            StartCoroutine(Damage(e_unit));
+            StartCoroutine(Damage(dir, e_unit));
         }
         else if (Vector3.Distance(transform.position, dir) > 3f)
         {
@@ -209,18 +209,19 @@ public class UnitController : MonoBehaviour
     }
 
 
-    IEnumerator Damage(E_unitMove e_unit)
+    IEnumerator Damage(Vector3 dir, E_unitMove e_unit)
     {
         if (e_unit.ehealth > 0 && time > 2f && u_State == unitState.Battle)
         {
             time = 0;
+            transform.LookAt(dir);
             playerAnim.SetTrigger("attack");
             e_unit.ehealth -= 10f;
             Debug.Log("Àû °ø°Ý");
 
             yield return new WaitForSeconds(1f);
 
-            StartCoroutine(Damage(e_unit));
+            StartCoroutine(Damage(dir, e_unit));
         }
 
         if (e_unit.ehealth <= 0)
@@ -389,13 +390,20 @@ public class UnitController : MonoBehaviour
     //    StartCoroutine(Pcheck());
     //}
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.CompareTag("Point"))
-    //    {
-    //        point = other.GetComponent<Points>();
-    //    }
-    //}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Point"))
+        {
+            point = other.GetComponent<Points>();
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Point"))
+        {
+            point.p_distance = 100f;
+        }
+    }
 
     IEnumerator Pcheck()
     {
@@ -411,13 +419,14 @@ public class UnitController : MonoBehaviour
             GameManager.instance.Aobj();
             EnemySpawn.instance.gold += 2; //¾Æ±º À¯´Ö Á×¿´À» ¶§ Àû ÀçÈ­ È¹µæ
 
+
+            playerAnim.SetTrigger("death");
+            yield return new WaitForSeconds(3f);
+
             if (point)
             {
                 point.p_distance = 100f;
             }
-
-            playerAnim.SetTrigger("death");
-            yield return new WaitForSeconds(3f);
 
             Destroy(gameObject);
             StopCoroutine(Pcheck());
