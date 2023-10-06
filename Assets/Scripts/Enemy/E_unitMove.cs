@@ -31,6 +31,11 @@ public class E_unitMove : MonoBehaviour
 
     private Animator enemyAnim;
 
+    //최적화 변수들
+    string run = "run";
+    string attack = "attack";
+    string _point = "Point";
+
     public enum E_UnitState
     {
         Battle, Idle, goPoint, noBattle
@@ -75,7 +80,7 @@ public class E_unitMove : MonoBehaviour
                     break;
         }
 
-        enemyAnim.SetFloat("run", moving.desiredVelocity.magnitude);
+        enemyAnim.SetFloat(run, moving.desiredVelocity.magnitude);
     }
 
     void E_Idle()
@@ -103,7 +108,7 @@ public class E_unitMove : MonoBehaviour
         moving.speed = emoveSpeed;
         moving.SetDestination(i);
 
-        enemyAnim.SetFloat("run", Vector3.Distance(transform.position,i));
+        enemyAnim.SetFloat(run, Vector3.Distance(transform.position,i));
 
         transform.SetParent(null);
     }
@@ -201,21 +206,23 @@ public class E_unitMove : MonoBehaviour
             moving.isStopped = false;
             moving.SetDestination(dir);
             moving.stoppingDistance = 2f;
-            enemyAnim.SetFloat("run", attackspeed);
+            enemyAnim.SetFloat(run, attackspeed);
         }
     }
 
     IEnumerator Damage(Vector3 dir, UnitController p_unit)
     {
+        WaitForSeconds wait = new WaitForSeconds(1f);
+
         if (p_unit.uhealth > 0 && time > 2f && e_State == E_UnitState.Battle)
         {
             time = 0;
             transform.LookAt(dir);
-            enemyAnim.SetTrigger("attack");
+            enemyAnim.SetTrigger(attack);
             p_unit.uhealth -= 10f;
             Debug.Log("공격");
 
-            yield return new WaitForSeconds(1f);
+            yield return wait;
 
             StartCoroutine(Damage(dir, p_unit));
         }
@@ -230,7 +237,7 @@ public class E_unitMove : MonoBehaviour
             {
                 Debug.Log("다시 출발");
                 moving.isStopped = false;
-                enemyAnim.SetFloat("run", Vector3.Distance(transform.position, lastDesti));
+                enemyAnim.SetFloat(run, Vector3.Distance(transform.position, lastDesti));
                 moving.SetDestination(lastDesti);
             }
 
@@ -348,6 +355,8 @@ public class E_unitMove : MonoBehaviour
 
     IEnumerator Pcheck()
     {
+        WaitForSeconds wait = new WaitForSeconds(1f);
+
         if (ehealth <= 0)
         {
             moving.isStopped = true;
@@ -372,21 +381,21 @@ public class E_unitMove : MonoBehaviour
 
         }
 
-        yield return new WaitForSeconds(1f);
+        yield return wait;
         StartCoroutine(Pcheck());
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Point"))
+        if (other.CompareTag(_point))
         {
             point = other.GetComponent<Points>();
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Point"))
+        if (other.CompareTag(_point))
         {
             point.e_distance = 100f;
         }

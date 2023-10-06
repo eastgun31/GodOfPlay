@@ -11,34 +11,39 @@ public class AttackRange : MonoBehaviour
     public UnitController p_unit;
     public E_unitMove parent;
 
+    string player = "Player";
+    
+
     // Start is called before the first frame update
     void Start()
     {
         parent = transform.GetComponentInParent<E_unitMove>();
+
+        StartCoroutine("Find_Target");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (targets != null)
-        {
-            for (int i = 0; i < targets.Count; i++)
-            {
-                target = targets[i].transform.position;
-                p_unit = targets[i].GetComponent<UnitController>();
-                if (p_unit.uhealth > 0 && parent.ehealth > 0)
-                {
-                    parent.Attakc(target, p_unit);
-                    parent.e_State = E_unitMove.E_UnitState.Battle;
-                }
-                if(p_unit.uhealth <= 0)
-                {
-                    p_unit = null;
-                    targets.Remove(targets[i]);
-                    parent.e_State = E_unitMove.E_UnitState.Idle;
-                }
-            }
-        }
+        //if (targets != null)
+        //{
+        //    for (int i = 0; i < targets.Count; i++)
+        //    {
+        //        target = targets[i].transform.position;
+        //        p_unit = targets[i].GetComponent<UnitController>();
+        //        if (p_unit.uhealth > 0 && parent.ehealth > 0)
+        //        {
+        //            parent.Attakc(target, p_unit);
+        //            parent.e_State = E_unitMove.E_UnitState.Battle;
+        //        }
+        //        if(p_unit.uhealth <= 0)
+        //        {
+        //            p_unit = null;
+        //            targets.Remove(targets[i]);
+        //            parent.e_State = E_unitMove.E_UnitState.Idle;
+        //        }
+        //    }
+        //}
 
         //if (target != null)
         //{
@@ -51,7 +56,7 @@ public class AttackRange : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.CompareTag("Player"))
+        if (col.CompareTag(player))
         {
             targets.Add(col.gameObject);
             //if(parent.targetUnit == null)
@@ -75,7 +80,7 @@ public class AttackRange : MonoBehaviour
 
     private void OnTriggerExit(Collider col)
     {
-        if (col.CompareTag("Player"))
+        if (col.CompareTag(player))
         {
             targets.Remove(col.gameObject);
             //target = null;
@@ -83,5 +88,35 @@ public class AttackRange : MonoBehaviour
         }
         //Debug.Log("Box Enemy : Target lost");
     }
+
+    IEnumerator Find_Target()
+    {
+        WaitForSeconds wait = new WaitForSeconds(1f);
+
+        if (targets != null)
+        {
+            for (int i = 0; i < targets.Count; i++)
+            {
+                target = targets[i].transform.position;
+                p_unit = targets[i].GetComponent<UnitController>();
+                if (p_unit.uhealth > 0 && parent.ehealth > 0)
+                {
+                    parent.Attakc(target, p_unit);
+                    parent.e_State = E_unitMove.E_UnitState.Battle;
+                }
+                if (p_unit.uhealth <= 0)
+                {
+                    p_unit = null;
+                    targets.Remove(targets[i]);
+                    parent.e_State = E_unitMove.E_UnitState.Idle;
+                }
+            }
+        }
+
+        yield return wait;
+
+        StartCoroutine("Find_Target");
+    }
+
 
 }

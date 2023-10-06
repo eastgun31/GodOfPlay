@@ -28,6 +28,11 @@ public class UnitController : MonoBehaviour
     public Slider Uslider;
     public float maxhp;
 
+    //최적화 변수들
+    string run = "run";
+    string attack = "attack";
+    string _point = "Point";
+
     public enum unitState //유닛상태머신
     {
         Battle, Idle, goPoint
@@ -92,7 +97,7 @@ public class UnitController : MonoBehaviour
                 break;
         }
 
-        playerAnim.SetFloat("run", navMeshAgent.velocity.magnitude);
+        playerAnim.SetFloat(run, navMeshAgent.velocity.magnitude);
     }
 
     void U_Idle()
@@ -211,15 +216,17 @@ public class UnitController : MonoBehaviour
 
     IEnumerator Damage(Vector3 dir, E_unitMove e_unit)
     {
+        WaitForSeconds wait = new WaitForSeconds(1f);
+
         if (e_unit.ehealth > 0 && time > 2f && u_State == unitState.Battle)
         {
             time = 0;
             transform.LookAt(dir);
-            playerAnim.SetTrigger("attack");
+            playerAnim.SetTrigger(attack);
             e_unit.ehealth -= 10f;
             Debug.Log("적 공격");
 
-            yield return new WaitForSeconds(1f);
+            yield return wait;
 
             StartCoroutine(Damage(dir, e_unit));
         }
@@ -392,14 +399,14 @@ public class UnitController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Point"))
+        if (other.CompareTag(_point))
         {
             point = other.GetComponent<Points>();
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Point"))
+        if (other.CompareTag(_point))
         {
             point.p_distance = 100f;
         }
@@ -407,6 +414,8 @@ public class UnitController : MonoBehaviour
 
     IEnumerator Pcheck()
     {
+        WaitForSeconds wait = new WaitForSeconds(1f);
+
         if (uhealth <= 0)
         {
             navMeshAgent.isStopped = true;
@@ -432,7 +441,7 @@ public class UnitController : MonoBehaviour
             StopCoroutine(Pcheck());
         }
 
-        yield return new WaitForSeconds(1f);
+        yield return wait;
         StartCoroutine(Pcheck());
     }
 
