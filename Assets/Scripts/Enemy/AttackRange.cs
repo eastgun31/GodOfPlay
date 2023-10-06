@@ -13,7 +13,6 @@ public class AttackRange : MonoBehaviour
 
     string player = "Player";
     
-
     // Start is called before the first frame update
     void Start()
     {
