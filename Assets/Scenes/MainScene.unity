@@ -25802,6 +25802,53 @@ Transform:
   m_Father: {fileID: 839965289}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &656558584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 656558585}
+  - component: {fileID: 656558586}
+  m_Layer: 0
+  m_Name: EnemySkills
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &656558585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656558584}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 980696861}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &656558586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656558584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e108372d09b590e48b981f9db32e5501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  e_active_s: 
+  e_passive_s: 
+  e_buff_s: 
+  e_item_s: 
 --- !u!1 &656852580
 GameObject:
   m_ObjectHideFlags: 0
@@ -34877,6 +34924,7 @@ Transform:
   - {fileID: 232280071}
   - {fileID: 1019576294996544489}
   - {fileID: 1477503253}
+  - {fileID: 980696861}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39984,6 +40032,65 @@ Transform:
   m_Father: {fileID: 963194228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &980696860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 980696861}
+  - component: {fileID: 980696862}
+  m_Layer: 0
+  m_Name: EnemySkillManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &980696861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980696860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 656558585}
+  m_Father: {fileID: 850490767}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &980696862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980696860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fed906383db9a748aa77f27a0d0e511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySkills: {fileID: 656558584}
+  e_Zeus_S: 0
+  e_Poseidon_S: 0
+  e_Hades_S: 0
+  e_Hephaestus_S: 0
+  e_Artemis_S: 0
+  e_Ares_S: 0
+  e_Hera_S: 0
+  e_Apollo_S: 0
+  e_Athena_S: 0
+  e_Aphrodite_S: 0
+  e_Hermes_S: 0
+  e_Hestia_S: 0
+  e_Dionysus_S: 0
+  e_Demeter_S: 0
 --- !u!1 &982186380
 GameObject:
   m_ObjectHideFlags: 0

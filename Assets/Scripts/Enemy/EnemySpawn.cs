@@ -8,15 +8,10 @@ public class EnemySpawn : MonoBehaviour
 
     public void Awake()
     {
-        if (null == instance)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
+        if (instance != null)
+            Destroy(gameObject);
         else
-        {
-            Destroy(this.gameObject);
-        }
+            instance = this;
     }
 
     public float gold = 50;

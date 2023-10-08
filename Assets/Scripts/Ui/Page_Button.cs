@@ -77,6 +77,7 @@ public class Page_Button : MonoBehaviour //건들지 말것
             Page_On.SetActive(true);
             Page_Off.SetActive(false);
 
+            EnemySkillManager.instance.enemySkills.SetActive(true);
         }
         else
         {
