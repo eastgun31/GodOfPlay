@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemySkill : MonoBehaviour
 {
-
     public string e_active_s;
     public string e_passive_s;
     public string e_buff_s;

@@ -226,6 +226,17 @@ public class E_unitMove : MonoBehaviour
             time = 0;
             transform.LookAt(dir);
             enemyAnim.SetTrigger(attack);
+
+            //if (posaidon)
+            //{
+            //    shieldhealth -= 10f; 
+
+            //    if(shieldhealth <= 0)
+            //    {
+            //        p_unit.uhealth += shieldhealth;
+            //    }
+            //}
+
             p_unit.uhealth -= 10f;
             Debug.Log("АјАн");
 
