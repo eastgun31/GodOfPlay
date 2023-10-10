@@ -221,6 +221,8 @@ public class E_unitMove : MonoBehaviour
     {
         WaitForSeconds wait = new WaitForSeconds(1f);
 
+        EnemySkillManager.instance.UseZeusSkill(dir);
+
         if (p_unit.uhealth > 0 && time > 2f && e_State == E_UnitState.Battle)
         {
             time = 0;
@@ -381,6 +383,39 @@ public class E_unitMove : MonoBehaviour
             edefense = GameManager.instance.defense + 15;
             emoveSpeed = GameManager.instance.moveSpeed + 3;
         }
+
+        //패시브--------------------------------------------------------------------
+        //검사 패시브가 켜지면   
+        if (EnemySkillManager.instance.e_passiveNow == 3)
+        {
+            if (unitNum == 0 || unitNum == 4 || unitNum == 8)
+            {
+                Debug.Log("패시브적용");
+                ehealth += 30;
+                eattackPower += 3;
+                edefense += 3;
+            }
+        }
+        //방패병
+        if (EnemySkillManager.instance.e_passiveNow == 1)
+        {
+            if (unitNum == 1 || unitNum == 5 || unitNum == 9)
+            {
+                ehealth += 30;
+                eattackPower += 3;
+                edefense += 3;
+            }
+        }
+        //궁수
+        if (EnemySkillManager.instance.e_passiveNow == 2)
+        {
+            if (unitNum == 2 || unitNum == 6 || unitNum == 10)
+            {
+                ehealth += 30;
+                eattackPower += 3;
+                edefense += 3;
+            }
+        }
     }
 
     IEnumerator Pcheck()
@@ -434,5 +469,10 @@ public class E_unitMove : MonoBehaviour
     public void ZuesDamage(float damage)
     {
         ehealth -= damage;
+    }
+
+    public void ApolloHeal(float heal)
+    {
+        ehealth += heal;
     }
 }

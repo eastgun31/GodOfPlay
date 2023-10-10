@@ -477,6 +477,10 @@ public class UnitController : MonoBehaviour
         StartCoroutine(Pcheck());
     }
 
+    public void ZuesDamage(float damage)
+    {
+        uhealth -= damage;
+    }
 
     public void ApolloHeal(float heal)
     {

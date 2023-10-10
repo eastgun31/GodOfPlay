@@ -25919,6 +25919,9 @@ MonoBehaviour:
   e_passive_s: 
   e_buff_s: 
   e_item_s: 
+  e_active_skillnum: 0
+  e_buff_skillnum: 0
+  e_item_skillnum: 0
 --- !u!1 &656852580
 GameObject:
   m_ObjectHideFlags: 0
@@ -40232,6 +40235,15 @@ MonoBehaviour:
   e_Hestia_S: 0
   e_Dionysus_S: 0
   e_Demeter_S: 0
+  e_active_skillnum: 0
+  e_buff_skillnum: 0
+  e_item_skillnum: 0
+  e_passiveNow: 0
+  itemLimit: 3
+  currentCooldown_1: 0
+  currentCooldown_2: 0
+  ZeusSkill: {fileID: 71005338}
+  ApolloSkill: {fileID: 1244246174}
 --- !u!1 &982186380
 GameObject:
   m_ObjectHideFlags: 0
