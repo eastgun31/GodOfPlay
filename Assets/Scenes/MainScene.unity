@@ -26467,14 +26467,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8519588137125117876, guid: 312b49af41fb3e4408c1aadba9ae6416, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 8519588137125117876, guid: 312b49af41fb3e4408c1aadba9ae6416, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 312b49af41fb3e4408c1aadba9ae6416, type: 3}
 --- !u!4 &665651201 stripped
@@ -40242,6 +40234,10 @@ MonoBehaviour:
   itemLimit: 3
   currentCooldown_1: 0
   currentCooldown_2: 0
+  currentCooldown_3: 0
+  useSkill: 0
+  usingItem: 0
+  random: 0
   ZeusSkill: {fileID: 71005338}
   ApolloSkill: {fileID: 1244246174}
 --- !u!1 &982186380

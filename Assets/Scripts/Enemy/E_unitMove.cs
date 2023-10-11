@@ -54,7 +54,8 @@ public class E_unitMove : MonoBehaviour
         enemyAnim = GetComponent<Animator>();
 
         maxhp = ehealth;
-       StartCoroutine(Pcheck());
+        StartCoroutine(Pcheck());
+        StartCoroutine(usingItem());
     }
 
     private void FixedUpdate()
@@ -474,11 +475,66 @@ public class E_unitMove : MonoBehaviour
 
     IEnumerator usingItem()
     {
-        if(EnemySkillManager.instance.usingItem)
+        WaitForSeconds wait = new WaitForSeconds(1f);
+
+        if (EnemySkillManager.instance.usingItem)
         {
-            
+            Transform skillEffect;
+
+            if (EnemySkillManager.instance.e_item_skillnum == 1)
+            {
+                skillEffect = transform.GetChild(0);
+                skillEffect.gameObject.SetActive(true);
+                //EnemySkillManager.instance.usingItem = false;
+
+                float originalSpeed = emoveSpeed;
+                emoveSpeed += 3;
+
+                yield return new WaitForSeconds(5f);
+
+                skillEffect.gameObject.SetActive(false);
+                emoveSpeed = originalSpeed;
+            }
+
+            if(EnemySkillManager.instance.e_item_skillnum == 2)
+            {
+                skillEffect = transform.GetChild(0);
+                skillEffect.gameObject.SetActive(true);
+                //EnemySkillManager.instance.usingItem = false;
+
+                ehealth += 20;
+
+                yield return new WaitForSeconds(2f);
+
+                skillEffect.gameObject.SetActive(false);
+            }
+
+            if(EnemySkillManager.instance.e_item_skillnum == 3)
+            {
+                skillEffect = transform.GetChild(0);
+                skillEffect.gameObject.SetActive(true); 
+                //EnemySkillManager.instance.usingItem = false;
+
+                float originalDamage = eattackPower;
+                eattackPower += 5;
+
+                yield return new WaitForSeconds(5f);
+
+                skillEffect.gameObject.SetActive(false);
+                emoveSpeed = originalDamage;
+            }
+
+            EnemySkillManager.instance.usingItem = false;
         }
-        yield return new WaitForSeconds(1f);
+
+        yield return wait;
+
+        if(EnemySkillManager.instance.itemLimit == 0)
+        {
+            StopCoroutine("usingItem");
+        }
+
+        StartCoroutine(usingItem());
     }
 
     public void ZuesDamage(float damage)

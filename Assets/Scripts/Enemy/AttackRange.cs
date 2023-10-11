@@ -16,6 +16,13 @@ public class AttackRange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //parent = transform.GetComponentInParent<E_unitMove>();
+
+        //StartCoroutine("Find_Target");
+    }
+
+    private void OnEnable()
+    {
         parent = transform.GetComponentInParent<E_unitMove>();
 
         StartCoroutine("Find_Target");

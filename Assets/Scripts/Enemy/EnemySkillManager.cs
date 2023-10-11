@@ -57,7 +57,7 @@ public class EnemySkillManager : MonoBehaviour
     void Start()
     {
         useSkill = true;
-        itemLimit = 3;
+        itemLimit = 100;
     }
 
     // Update is called once per frame
@@ -259,7 +259,7 @@ public class EnemySkillManager : MonoBehaviour
     {
         useSkill = false;
         usingItem = true;
-        StartCoroutine(Num3_Skill_Cooldown(3f));
+        StartCoroutine(Num3_Skill_Cooldown(7f));
         itemLimit--;
     }
 
@@ -267,7 +267,7 @@ public class EnemySkillManager : MonoBehaviour
     {
         useSkill = false;
         usingItem = true;
-        StartCoroutine(Num3_Skill_Cooldown(3f));
+        StartCoroutine(Num3_Skill_Cooldown(7f));
         itemLimit--;
     }
 
@@ -275,7 +275,7 @@ public class EnemySkillManager : MonoBehaviour
     {
         useSkill = false;
         usingItem = true;
-        StartCoroutine(Num3_Skill_Cooldown(3f));
+        StartCoroutine(Num3_Skill_Cooldown(7f));
         itemLimit--;
     }
 
@@ -285,7 +285,7 @@ public class EnemySkillManager : MonoBehaviour
 
         EnemySpawn.instance.gold += 100;
 
-        StartCoroutine(Num3_Skill_Cooldown(3f));
+        StartCoroutine(Num3_Skill_Cooldown(5f));
         itemLimit--;
     }
 }
