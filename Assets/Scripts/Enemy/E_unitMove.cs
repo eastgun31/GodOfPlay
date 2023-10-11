@@ -89,6 +89,8 @@ public class E_unitMove : MonoBehaviour
     {
         //time = 0;
 
+
+
         if (ehealth > 0)
         {
             moving.isStopped = false;
@@ -221,7 +223,11 @@ public class E_unitMove : MonoBehaviour
     {
         WaitForSeconds wait = new WaitForSeconds(1f);
 
-        EnemySkillManager.instance.UseZeusSkill(dir);
+        if(EnemySkillManager.instance.useSkill)
+        {
+            EnemySkillManager.instance.E_UseSkill(dir, gameObject.transform.position);
+            //EnemySkillManager.instance.useSkill = false;
+        }
 
         if (p_unit.uhealth > 0 && time > 2f && e_State == E_UnitState.Battle)
         {
@@ -464,6 +470,15 @@ public class E_unitMove : MonoBehaviour
         {
             point.e_distance = 100f;
         }
+    }
+
+    IEnumerator usingItem()
+    {
+        if(EnemySkillManager.instance.usingItem)
+        {
+            
+        }
+        yield return new WaitForSeconds(1f);
     }
 
     public void ZuesDamage(float damage)

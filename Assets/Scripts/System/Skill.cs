@@ -266,7 +266,6 @@ public class Skill : MonoBehaviour
 
             ApolloSkill.SetActive(true);
             ApolloSkill.transform.position = spawnPosition;
-            //ApolloSkill = Instantiate(skillNum_5, spawnPosition, Quaternion.identity);
 
             Collider[] colliders = Physics.OverlapSphere(spawnPosition, 4.5f, LayerMask.GetMask("Unit"));
             foreach (Collider collider in colliders)
