@@ -8630,6 +8630,7 @@ GameObject:
   - component: {fileID: 880580243735957084}
   - component: {fileID: 2615280283131430618}
   - component: {fileID: 1724265180259111400}
+  - component: {fileID: 8283636959036722536}
   m_Layer: 6
   m_Name: h1
   m_TagString: Player
@@ -8774,8 +8775,11 @@ MonoBehaviour:
   umoveSpeed: 0
   targetUnit: {fileID: 0}
   point: {fileID: 0}
+  unitType: 0
   Uslider: {fileID: 8763180722414341624}
   maxhp: 0
+  isHades: 0
+  u_State: 0
 --- !u!54 &1724265180259111400
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8792,6 +8796,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &8283636959036722536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33be6d8915785834eab16a8ff7a71c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 15
+  edgeSharpness: -10
 --- !u!1 &158858
 GameObject:
   m_ObjectHideFlags: 0
