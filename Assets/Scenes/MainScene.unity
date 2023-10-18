@@ -4564,6 +4564,7 @@ MonoBehaviour:
   currentCooldown_1: 0
   currentCooldown_2: 0
   ZeusSkill: {fileID: 71005338}
+  HadesSkill: {fileID: 5882814825712509882, guid: 1f846c8c637efc34aa69f54c6afa431d, type: 3}
   ApolloSkill: {fileID: 1244246174}
 --- !u!4 &125738262
 Transform:
@@ -40239,6 +40240,7 @@ MonoBehaviour:
   usingItem: 0
   random: 0
   ZeusSkill: {fileID: 71005338}
+  HadesSkill: {fileID: 71005338}
   ApolloSkill: {fileID: 1244246174}
 --- !u!1 &982186380
 GameObject:
@@ -65718,19 +65720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e84dcb05944e134587e67e335ba22b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rendererPrefab: {fileID: 1489479144709424, guid: 5f0349d33c8d8f54ca654b9828f90226, type: 3}
-  _groundLayer:
-    serializedVersion: 2
-    m_Bits: 1
-  _fogWidthX: 40
-  _fogWidthZ: 40
-  _tileSize: 1
-  _updateCycle: 0.5
-  _fogAlpha:
-    current: 0
-    visited: 0.8
-    never: 1
-  _showGizmos: 1
 --- !u!4 &1643094311
 Transform:
   m_ObjectHideFlags: 0

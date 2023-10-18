@@ -35,6 +35,10 @@ public class UnitController : MonoBehaviour
     string attack = "attack";
     string _point = "Point";
 
+    //하데스 변수
+    public bool isHades = false;
+
+
     public enum unitState //유닛상태머신
     {
         Battle, Idle, goPoint
@@ -446,7 +450,13 @@ public class UnitController : MonoBehaviour
 
     IEnumerator Pcheck()
     {
-        WaitForSeconds wait = new WaitForSeconds(1f);
+        WaitForSeconds wait = new WaitForSeconds(0.1f);
+
+        if (uhealth <= 0 && isHades)
+        {
+            uhealth = maxhp / 2;
+            isHades = false;
+        }
 
         if (uhealth <= 0)
         {
@@ -486,5 +496,42 @@ public class UnitController : MonoBehaviour
     {
         uhealth += heal;
     }
+
+    public void AphroditeChange(Vector3 spawnPoint, Vector3 pointPosition)
+    {
+        StartCoroutine(_AphroditeChange(spawnPoint, pointPosition));
+    }
+
+    public IEnumerator _AphroditeChange(Vector3 spawnPoint, Vector3 pointPosition)
+    {
+        if (unitnumber == 0 || unitnumber == 4 || unitnumber == 8)
+            EnemySpawn.instance.Aphrodite_Warrior(spawnPoint, pointPosition);
+        else if (unitnumber == 1 || unitnumber == 5 || unitnumber == 9)
+            EnemySpawn.instance.Aphrodite_Shield(spawnPoint, pointPosition);
+        else if (unitnumber == 2 || unitnumber == 6 || unitnumber == 10)
+            EnemySpawn.instance.Aphrodite_Archer(spawnPoint, pointPosition);
+        else
+            EnemySpawn.instance.Aphrodite_HorseMan(spawnPoint, pointPosition);
+
+        uhealth = 0;
+
+        yield return new WaitForSeconds(0.2f);
+
+        uhealth = 0;
+
+        if (point)
+        {
+            point.p_distance = 100f;
+        }
+
+        RTSUnitController.instance.UnitList.Remove(this);
+        RTSUnitController.instance.selectedUnitList.Remove(this);
+
+        GameManager.instance.All_Obj--;
+
+
+        Destroy(gameObject);
+    }
+
 }
 

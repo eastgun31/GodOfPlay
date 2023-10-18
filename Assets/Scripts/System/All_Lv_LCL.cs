@@ -6,6 +6,16 @@ using UnityEngine.UI;
 
 public class All_Lv_LCL : MonoBehaviour
 {
+    public static All_Lv_LCL instance;
+
+    void Awake()
+    {
+        if (instance != null)
+            Destroy(gameObject);
+        else
+            instance = this;
+    }
+
     private int Gold;
     private int U;
 
@@ -321,6 +331,48 @@ public class All_Lv_LCL : MonoBehaviour
             GameManager.instance.gold -= 350; //버튼을 누르면 본부 2레벨로 업그레이드 하기 위한 필요 재화 350 없앰
 
         }
+    }
+
+    //아프로디테 스킬로 생성되는 유닛
+    public void Aphrodite_Warrior(Vector3 spawnPoint)
+    {
+        GameObject newObject = Instantiate(Warrior_1L_Obj, spawnPoint, Quaternion.identity);
+        GameManager.instance.All_Obj++;
+        GameManager.instance.Aobj();
+
+        //리스트에 추가
+        UnitController unit = newObject.GetComponent<UnitController>();
+        RTSUnitController.instance.UnitList.Add(unit);
+    }
+    public void Aphrodite_Shield(Vector3 spawnPoint)
+    {
+        GameObject newObject = Instantiate(Shield_1L_Obj, spawnPoint, Quaternion.identity);
+        GameManager.instance.All_Obj++;
+        GameManager.instance.Aobj();
+
+        //리스트에 추가
+        UnitController unit = newObject.GetComponent<UnitController>();
+        RTSUnitController.instance.UnitList.Add(unit);
+    }
+    public void Aphrodite_Archer(Vector3 spawnPoint)
+    {
+        GameObject newObject = Instantiate(Archer_1L_Obj, spawnPoint, Quaternion.identity);
+        GameManager.instance.All_Obj++;
+        GameManager.instance.Aobj();
+
+        //리스트에 추가
+        UnitController unit = newObject.GetComponent<UnitController>();
+        RTSUnitController.instance.UnitList.Add(unit);
+    }
+    public void Aphrodite_HorseMan(Vector3 spawnPoint)
+    {
+        GameObject newObject = Instantiate(HorseMan_1L_Obj, spawnPoint, Quaternion.identity);
+        GameManager.instance.All_Obj++;
+        GameManager.instance.Aobj();
+
+        //리스트에 추가
+        UnitController unit = newObject.GetComponent<UnitController>();
+        RTSUnitController.instance.UnitList.Add(unit);
     }
 
 }

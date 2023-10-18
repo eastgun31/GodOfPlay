@@ -49,6 +49,7 @@ public class EnemySkillManager : MonoBehaviour
 
 
     public GameObject ZeusSkill; //제우스 액티브
+    public GameObject HadesSkill; //제우스 액티브
 
     public GameObject ApolloSkill; //아폴론 액티브
 
@@ -57,7 +58,7 @@ public class EnemySkillManager : MonoBehaviour
     void Start()
     {
         useSkill = true;
-        itemLimit = 100;
+        itemLimit = 3;
     }
 
     // Update is called once per frame
@@ -66,7 +67,7 @@ public class EnemySkillManager : MonoBehaviour
         
     }
 
-    public void E_UseSkill(Vector3 dir, Vector3 dir2)
+    public void E_UseSkill(Vector3 dir, Vector3 dir2, UnitController unit, Vector3 pointPosition)
     {
         //int random;
 
@@ -86,7 +87,7 @@ public class EnemySkillManager : MonoBehaviour
                     UsePoseidonSkill();
                     break;
                 case 3:
-                    UseHadesSkill();
+                    UseHadesSkill(dir2);
                     break;
             }
         }
@@ -105,7 +106,7 @@ public class EnemySkillManager : MonoBehaviour
                     UseAthenaSkill();
                     break;
                 case 4:
-                    UseAphroditeSkill();
+                    UseAphroditeSkill(dir, unit, pointPosition);
                     break;
             }
         }
@@ -211,10 +212,22 @@ public class EnemySkillManager : MonoBehaviour
         useSkill = false;
         StartCoroutine(Num1_Skill_Cooldown(5f));
     }
-    void UseHadesSkill()
+    void UseHadesSkill(Vector3 dir)
     {
+        Collider[] colliders = Physics.OverlapSphere(dir, 4.5f, LayerMask.GetMask("E_Unit"));
+        foreach (Collider collider in colliders)
+        {
+            E_unitMove e_unit = collider.GetComponent<E_unitMove>();
+            if (e_unit != null)
+            {
+                //힐량 조정
+                e_unit.ApolloHeal(50);
+            }
+        }
+
         useSkill = false;
         StartCoroutine(Num1_Skill_Cooldown(5f));
+        StartCoroutine(DeactiveSkill(ApolloSkill));
     }
     //2번 액티브 스킬-------------------------------------------------------------------------------------------
     void UseHeraSkill()
@@ -234,22 +247,28 @@ public class EnemySkillManager : MonoBehaviour
             E_unitMove e_unit = collider.GetComponent<E_unitMove>();
             if (e_unit != null)
             {
-                //힐량 조정
-                e_unit.ApolloHeal(50);
+                Transform hadesSkill = e_unit.transform.GetChild(4);
+                hadesSkill.gameObject.SetActive(true);
+
+                e_unit.isHades = true; //부활 온
+
             }
         }
 
         useSkill = false;
         StartCoroutine(Num2_Skill_Cooldown(3f));
-        StartCoroutine(DeactiveSkill(ApolloSkill));
+        StartCoroutine(DeactiveSkill(HadesSkill));
     }
     void UseAthenaSkill()
     {
         useSkill = false;
         StartCoroutine(Num2_Skill_Cooldown(3f));
     }
-    void UseAphroditeSkill()
+    void UseAphroditeSkill(Vector3 dir, UnitController unit, Vector3 pointPosition)
     {
+        UnitController p_unit = unit.GetComponent<UnitController>();
+        p_unit.AphroditeChange(dir, pointPosition);
+
         useSkill = false;
         StartCoroutine(Num2_Skill_Cooldown(3f));
     }

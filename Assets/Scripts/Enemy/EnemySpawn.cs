@@ -185,4 +185,35 @@ public class EnemySpawn : MonoBehaviour
     {
         upgradeLV++;
     }
+
+    //아프로디테 스킬로 생성되는 유닛
+    public void Aphrodite_Warrior(Vector3 spawnPoint, Vector3 pointPosition)
+    {
+        GameObject newObject = Instantiate(e_unit[0], spawnPoint, Quaternion.identity);
+        E_unitMove e_newunit = newObject.GetComponent<E_unitMove>();
+        e_newunit.lastDesti = pointPosition;
+        GameManager.instance.e_population++;
+    }
+    public void Aphrodite_Shield(Vector3 spawnPoint, Vector3 pointPosition)
+    {
+        GameObject newObject = Instantiate(e_unit[1], spawnPoint, Quaternion.identity);
+        E_unitMove e_newunit = newObject.GetComponent<E_unitMove>();
+        e_newunit.lastDesti = pointPosition;
+        GameManager.instance.e_population++;
+    }
+    public void Aphrodite_Archer(Vector3 spawnPoint, Vector3 pointPosition)
+    {
+        GameObject newObject = Instantiate(e_unit[2], spawnPoint, Quaternion.identity);
+        E_unitMove e_newunit = newObject.GetComponent<E_unitMove>();
+        e_newunit.lastDesti = pointPosition;
+        GameManager.instance.e_population++;
+    }
+    public void Aphrodite_HorseMan(Vector3 spawnPoint, Vector3 pointPosition)
+    {
+        GameObject newObject = Instantiate(e_unit[3], spawnPoint, Quaternion.identity);
+        E_unitMove e_newunit = newObject.GetComponent<E_unitMove>();
+        e_newunit.lastDesti = pointPosition;
+        GameManager.instance.e_population++;
+    }
+
 }

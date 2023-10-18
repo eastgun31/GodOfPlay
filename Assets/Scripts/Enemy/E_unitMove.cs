@@ -38,6 +38,8 @@ public class E_unitMove : MonoBehaviour
     string attack = "attack";
     string _point = "Point";
 
+    public bool isHades = false;
+
     public enum E_UnitState
     {
         Battle, Idle, goPoint, noBattle
@@ -226,7 +228,7 @@ public class E_unitMove : MonoBehaviour
 
         if(EnemySkillManager.instance.useSkill)
         {
-            EnemySkillManager.instance.E_UseSkill(dir, gameObject.transform.position);
+            EnemySkillManager.instance.E_UseSkill(dir, gameObject.transform.position, p_unit, lastDesti);
             //EnemySkillManager.instance.useSkill = false;
         }
 
@@ -427,7 +429,13 @@ public class E_unitMove : MonoBehaviour
 
     IEnumerator Pcheck()
     {
-        WaitForSeconds wait = new WaitForSeconds(1f);
+        WaitForSeconds wait = new WaitForSeconds(0.1f);
+
+        if (ehealth <= 0 && isHades)
+        {
+            ehealth = maxhp / 2;
+            isHades = false;
+        }
 
         if (ehealth <= 0)
         {
@@ -545,5 +553,37 @@ public class E_unitMove : MonoBehaviour
     public void ApolloHeal(float heal)
     {
         ehealth += heal;
+    }
+
+    public void AphroditeChange(Vector3 spawnPoint)
+    {
+        StartCoroutine(_AphroditeChange(spawnPoint));
+    }
+
+    public IEnumerator _AphroditeChange(Vector3 spawnPoint)
+    {
+        if (unitNum == 0 || unitNum == 4 || unitNum == 8)
+            All_Lv_LCL.instance.Aphrodite_Warrior(spawnPoint);
+        else if (unitNum == 1 || unitNum == 5 || unitNum == 9)
+            All_Lv_LCL.instance.Aphrodite_Shield(spawnPoint);
+        else if (unitNum == 2 || unitNum == 6 || unitNum == 10)
+            All_Lv_LCL.instance.Aphrodite_Archer(spawnPoint);
+        else
+            All_Lv_LCL.instance.Aphrodite_HorseMan(spawnPoint);
+
+        ehealth = 0;
+
+        yield return new WaitForSeconds(0.2f);
+
+        ehealth = 0;
+
+        if (point)
+        {
+            point.e_distance = 100f;
+        }
+        GameManager.instance.e_population--;
+
+
+        Destroy(gameObject);
     }
 }
