@@ -48,6 +48,7 @@ public class Skill : MonoBehaviour
     public GameObject ZeusSkill; //제우스 액티브
     public GameObject HadesSkill; //하데스 액티브
     public GameObject ApolloSkill; //아폴론 액티브
+    public GameObject vision;
 
     void Awake()
     {
@@ -207,6 +208,12 @@ public class Skill : MonoBehaviour
         skill.SetActive(false);
     }
 
+    IEnumerator Novision(float time)
+    {
+        yield return new WaitForSeconds(time); // 비활성화까지의 대기 시간(3초)
+        vision.SetActive(true);
+    }
+
     //1번 액티브 스킬-------------------------------------------------------------------------------------------
     //제우스 스킬
     void UseZeusSkill()
@@ -314,7 +321,12 @@ public class Skill : MonoBehaviour
     }
     void UseAthenaSkill()
     {
+        vision.SetActive(false);
+        StartCoroutine(Novision(3f));
 
+        isSkillReady_2 = false;
+        CancelSkill();
+        StartCoroutine(Num2_Skill_Cooldown(5f));
     }
     void UseAphroditeSkill()
     {

@@ -73246,7 +73246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 20182674636797668, guid: c5c08c2166919aa4ba90a05c987a3e85, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 2049
+      value: 2048
       objectReference: {fileID: 0}
     - target: {fileID: 114130591815092892, guid: c5c08c2166919aa4ba90a05c987a3e85, type: 3}
       propertyPath: color_fog.a
