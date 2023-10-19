@@ -22931,7 +22931,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -39657,7 +39657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camSpeed: 50
   scrollSpeed: 50
-  minY: 10
+  minY: 15
   maxY: 35
 --- !u!1 &965752037
 GameObject:
@@ -73246,11 +73246,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 20182674636797668, guid: c5c08c2166919aa4ba90a05c987a3e85, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 2048
+      value: 2049
+      objectReference: {fileID: 0}
+    - target: {fileID: 114130591815092892, guid: c5c08c2166919aa4ba90a05c987a3e85, type: 3}
+      propertyPath: color_fog.a
+      value: 0.627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 114130591815092892, guid: c5c08c2166919aa4ba90a05c987a3e85, type: 3}
+      propertyPath: planeOffset.x
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 114130591815092892, guid: c5c08c2166919aa4ba90a05c987a3e85, type: 3}
       propertyPath: planeOffset.y
-      value: 5
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114130591815092892, guid: c5c08c2166919aa4ba90a05c987a3e85, type: 3}
+      propertyPath: planeOffset.z
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 114130591815092892, guid: c5c08c2166919aa4ba90a05c987a3e85, type: 3}
       propertyPath: fowPlaneScale.x

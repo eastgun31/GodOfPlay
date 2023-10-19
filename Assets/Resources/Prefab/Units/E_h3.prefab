@@ -8790,9 +8790,12 @@ MonoBehaviour:
   eattackPower: 0
   edefense: 0
   emoveSpeed: 0
+  unitType: 0
   Eslider: {fileID: 6863203465288084777}
   maxhp: 0
   point: {fileID: 0}
+  isHades: 0
+  e_State: 0
 --- !u!1 &158858
 GameObject:
   m_ObjectHideFlags: 0
@@ -14399,7 +14402,7 @@ GameObject:
   - component: {fileID: 72824311518938851}
   - component: {fileID: 6074377533682885713}
   - component: {fileID: 7103535587178819349}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14474,7 +14477,7 @@ GameObject:
   - component: {fileID: 3463948529692676083}
   - component: {fileID: 6863203465288084777}
   - component: {fileID: 8853619510142080694}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Slider
   m_TagString: Slider
   m_Icon: {fileID: 0}
@@ -14575,7 +14578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4106266114135238731}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14614,7 +14617,7 @@ GameObject:
   - component: {fileID: 5567917631144197141}
   - component: {fileID: 1367278063237531132}
   - component: {fileID: 6982958185261965348}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14713,7 +14716,7 @@ GameObject:
   - component: {fileID: 6341336723935759388}
   - component: {fileID: 3217246357773041468}
   - component: {fileID: 1875004225572438360}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14973,6 +14976,10 @@ PrefabInstance:
     - target: {fileID: 5422016456107956512, guid: 7d77a17b4436723468a4bd55dec9c1b4, type: 3}
       propertyPath: m_Name
       value: E_attackRange
+      objectReference: {fileID: 0}
+    - target: {fileID: 5422016456107956512, guid: 7d77a17b4436723468a4bd55dec9c1b4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d77a17b4436723468a4bd55dec9c1b4, type: 3}
