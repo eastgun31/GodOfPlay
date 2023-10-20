@@ -25,6 +25,8 @@ public class E_unitMove : MonoBehaviour
 
     public int unitType; //À¯´Öº´Á¾
 
+    public GameObject attackRange;
+
     float attackspeed;
 
     public Slider Eslider;

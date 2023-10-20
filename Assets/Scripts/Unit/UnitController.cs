@@ -37,6 +37,7 @@ public class UnitController : MonoBehaviour
 
     //하데스 변수
     public bool isHades = false;
+    public GameObject attackRange;
 
 
     public enum unitState //유닛상태머신
@@ -85,8 +86,17 @@ public class UnitController : MonoBehaviour
 
     public void MoveTo(Vector3 end)
     {
-        //playerAnim.SetFloat("run", navMeshAgent.velocity.magnitude);
-        navMeshAgent.SetDestination(end);
+        if(uhealth > 0)
+        {
+            attackRange.SetActive(false);
+            navMeshAgent.SetDestination(end);
+            Invoke("ReAttack", 2f);
+        }
+    }
+
+    void ReAttack()
+    {
+        attackRange.SetActive(true);
     }
 
     void Update()

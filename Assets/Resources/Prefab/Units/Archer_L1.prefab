@@ -867,8 +867,12 @@ MonoBehaviour:
   umoveSpeed: 0
   targetUnit: {fileID: 0}
   point: {fileID: 0}
+  unitType: 0
   Uslider: {fileID: 7675664200170684716}
   maxhp: 0
+  isHades: 0
+  attackRange: {fileID: 7757062239952864565}
+  u_State: 0
 --- !u!195 &237265588284140132
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2038,6 +2042,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd623b4f59e91d049bdfade64e909c1c, type: 3}
+--- !u!1 &7757062239952864565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8103481104187747366, guid: bd623b4f59e91d049bdfade64e909c1c, type: 3}
+  m_PrefabInstance: {fileID: 2005164114410727699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2483714246824054279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4153491837208340244, guid: bd623b4f59e91d049bdfade64e909c1c, type: 3}

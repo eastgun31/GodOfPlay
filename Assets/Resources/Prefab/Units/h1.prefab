@@ -8779,6 +8779,7 @@ MonoBehaviour:
   Uslider: {fileID: 8763180722414341624}
   maxhp: 0
   isHades: 0
+  attackRange: {fileID: 7614597983219437219}
   u_State: 0
 --- !u!54 &1724265180259111400
 Rigidbody:
@@ -15079,6 +15080,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd623b4f59e91d049bdfade64e909c1c, type: 3}
+--- !u!1 &7614597983219437219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8103481104187747366, guid: bd623b4f59e91d049bdfade64e909c1c, type: 3}
+  m_PrefabInstance: {fileID: 1862561310588281477}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2341044376828478865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4153491837208340244, guid: bd623b4f59e91d049bdfade64e909c1c, type: 3}
