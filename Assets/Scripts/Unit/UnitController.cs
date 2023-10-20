@@ -88,9 +88,14 @@ public class UnitController : MonoBehaviour
     {
         if(uhealth > 0)
         {
+            Unit_AttackRange enemylist = attackRange.GetComponent<Unit_AttackRange>();
+            enemylist.targets.Clear();
             attackRange.SetActive(false);
             navMeshAgent.SetDestination(end);
-            Invoke("ReAttack", 2f);
+            if(attackRange)
+            {
+                Invoke("ReAttack", 3f);
+            }
         }
     }
 
