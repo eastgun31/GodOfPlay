@@ -105,7 +105,7 @@ public class Points : MonoBehaviour
         {
             time += Time.deltaTime;
 
-            if (time > 10f)
+            if (time > 15f)
             {
                 pointcheck = 1;
 
@@ -160,7 +160,7 @@ public class Points : MonoBehaviour
                 }
             }
 
-            if (time > 10f) //플레이어가 점령시
+            if (time > 15f) //플레이어가 점령시
             {
                 time = 0;
                 pointcheck = 2;

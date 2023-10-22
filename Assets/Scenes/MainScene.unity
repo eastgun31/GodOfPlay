@@ -3279,7 +3279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96595636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9699993, y: 0.5, z: 2.8899994}
+  m_LocalPosition: {x: -2.9699993, y: 1, z: 2.8899994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 166198651}
@@ -4566,6 +4566,7 @@ MonoBehaviour:
   ZeusSkill: {fileID: 71005338}
   HadesSkill: {fileID: 5882814825712509882, guid: 1f846c8c637efc34aa69f54c6afa431d, type: 3}
   ApolloSkill: {fileID: 1244246174}
+  vision: {fileID: 0}
 --- !u!4 &125738262
 Transform:
   m_ObjectHideFlags: 0
@@ -65881,7 +65882,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650183190}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.289999, y: 0.5, z: 2.8899994}
+  m_LocalPosition: {x: -6.289999, y: 1, z: 2.8899994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 166198651}
@@ -82679,7 +82680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079064761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.29000092, y: 0.5, z: -1.8700008}
+  m_LocalPosition: {x: 0.29000092, y: 1, z: -1.8700008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 166198651}
@@ -84232,7 +84233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119448111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.29000092, y: 0.5, z: -5.5}
+  m_LocalPosition: {x: 0.29000092, y: 1, z: -5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 166198651}
