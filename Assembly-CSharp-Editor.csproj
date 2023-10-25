@@ -54,6 +54,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="D:\2022391018\gstar\GodOfPlay\Assets\Resources\Assets\Smitesoft\Colorize Palette Modifier\Plugins\ColorizeEditor.dll" />
+    <Analyzer Include="D:\2022391018\gstar\GodOfPlay\Assets\Resources\Assets\Smitesoft\Colorize Palette Modifier\Plugins\Colorize.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Resources\Assets\SineVFX\TopDownEffects\Resources\Scripts\Editor\CustomRampGeneratorEditor.cs" />
@@ -312,6 +314,12 @@
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Colorize">
+      <HintPath>Assets\Smitesoft\Colorize Palette Modifier\Plugins\Colorize.dll</HintPath>
+    </Reference>
+    <Reference Include="ColorizeEditor">
+      <HintPath>Assets\Smitesoft\Colorize Palette Modifier\Plugins\ColorizeEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
