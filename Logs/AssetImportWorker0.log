@@ -15,15 +15,15 @@ D:/2022391018/gstar/GodOfPlay
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51922
+53795
 Successfully changed project path to: D:/2022391018/gstar/GodOfPlay
 D:/2022391018/gstar/GodOfPlay
 Using Asset Import Pipeline V2.
-Player connection [12716] Host "[IP] 200.1.2.84 [Port] 3221442848 [Flags] 2 [Guid] 2655192355 [EditorId] 2655192355 [Version] 1048832 [Id] WindowsEditor(7,806-18) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8372] Host "[IP] 200.1.2.84 [Port] 805523744 [Flags] 2 [Guid] 1227739697 [EditorId] 1227739697 [Version] 1048832 [Id] WindowsEditor(7,806-18) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12716] Host "[IP] 200.1.2.84 [Port] 3221442848 [Flags] 2 [Guid] 2655192355 [EditorId] 2655192355 [Version] 1048832 [Id] WindowsEditor(7,806-18) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8372] Host "[IP] 200.1.2.84 [Port] 805523744 [Flags] 2 [Guid] 1227739697 [EditorId] 1227739697 [Version] 1048832 [Id] WindowsEditor(7,806-18) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 69.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 74.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.45f1 (660cd1701bd5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.45f1/Editor/Data/Resources/UnitySubsystems
@@ -39,72 +39,72 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.45f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.45f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.45f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001045 seconds.
+Registered in 0.001111 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 77.59 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 75.99 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.609 seconds
+- Completed reload, in  0.731 seconds
 Domain Reload Profiling:
-	ReloadAssembly (609ms)
-		BeginReloadAssembly (53ms)
+	ReloadAssembly (732ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (488ms)
-			LoadAssemblies (52ms)
+		EndReloadAssembly (476ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (156ms)
+			SetupTypeCache (142ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (203ms)
+			SetupLoadedEditorAssemblies (204ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (78ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (76ms)
 				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (78ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
+				ProcessInitializeOnLoadAttributes (75ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002030 seconds.
+Registered in 0.001870 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.901 seconds
+- Completed reload, in  0.933 seconds
 Domain Reload Profiling:
-	ReloadAssembly (902ms)
-		BeginReloadAssembly (132ms)
+	ReloadAssembly (938ms)
+		BeginReloadAssembly (137ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (718ms)
-			LoadAssemblies (78ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (749ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (248ms)
+			SetupTypeCache (260ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (278ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (284ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (193ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (198ms)
 				ProcessInitializeOnLoadMethodAttributes (9ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
@@ -113,82 +113,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1554 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.6 MB.
+System memory in use before: 151.3 MB.
+System memory in use after: 151.4 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1992.
-Total: 2.654100 ms (FindLiveObjects: 0.231300 ms CreateObjectMapping: 0.057700 ms MarkObjects: 2.243200 ms  DeleteObjects: 0.121200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/Skill_Scene.unity
-  artifactKey: Guid(6209a07d1dfbbb9488672c0d85ebd915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Skill_Scene.unity using Guid(6209a07d1dfbbb9488672c0d85ebd915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c58cfdd826a465ef0a3d163f74cb82') in 0.009524 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Scenes/MainScene.unity
-  artifactKey: Guid(7a9bd330fbafc0a48a1ad023b74214e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScene.unity using Guid(7a9bd330fbafc0a48a1ad023b74214e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c8ce9e15023f818a74c551b9881b5a') in 0.006640 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002632 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.462 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1463ms)
-		BeginReloadAssembly (172ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1210ms)
-			LoadAssemblies (152ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (434ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (450ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (316ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1494 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.0 MB.
-System memory in use after: 145.1 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1995.
-Total: 3.624400 ms (FindLiveObjects: 0.145100 ms CreateObjectMapping: 0.071300 ms MarkObjects: 3.334900 ms  DeleteObjects: 0.071700 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1997.
+Total: 2.562900 ms (FindLiveObjects: 0.113700 ms CreateObjectMapping: 0.046500 ms MarkObjects: 2.278200 ms  DeleteObjects: 0.123900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -202,55 +135,37 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4864.248526 seconds.
-  path: Assets/Resources/Assets/FogOfWar/Vision.prefab
-  artifactKey: Guid(977f425355e7def47a087f195d0e997c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/FogOfWar/Vision.prefab using Guid(977f425355e7def47a087f195d0e997c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25e3ab5fd37c483aed45149f00ad14f8') in 0.321472 seconds 
+  path: Assets/Resources/Prefab/Units/h2.prefab
+  artifactKey: Guid(36834ef55d451054fbedd58daa698599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/Units/h2.prefab using Guid(36834ef55d451054fbedd58daa698599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '354092a6ee1187fef96fae39063eb5ef') in 0.851370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Archer_L1.prefab
+  artifactKey: Guid(f334844c48a619f4abb86e5f647a19e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Archer_L1.prefab using Guid(f334844c48a619f4abb86e5f647a19e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238ec98af56366a83ea38922c5a3a9be') in 0.159183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Resources/Prefab/Units/h1.prefab
+  artifactKey: Guid(67a46c9e5df970d4d86dbb48894bf80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/Units/h1.prefab using Guid(67a46c9e5df970d4d86dbb48894bf80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e7b3ff646626956c7071096b356039') in 0.156839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.414780 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Swordman_L1.prefab
+  artifactKey: Guid(312b49af41fb3e4408c1aadba9ae6416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Swordman_L1.prefab using Guid(312b49af41fb3e4408c1aadba9ae6416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d99828c46814837a6762b65e439cf33') in 0.163874 seconds 
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002457 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.05 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.464 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1465ms)
-		BeginReloadAssembly (168ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (48ms)
-		EndReloadAssembly (1210ms)
-			LoadAssemblies (140ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (445ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (441ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (111ms)
-				ProcessInitializeOnLoadAttributes (308ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1494 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.2 MB.
-System memory in use after: 148.3 MB.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.6 MB.
+System memory in use after: 135.7 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2007.
-Total: 3.074700 ms (FindLiveObjects: 0.184000 ms CreateObjectMapping: 0.094200 ms MarkObjects: 2.754500 ms  DeleteObjects: 0.040500 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2008.
+Total: 2.746000 ms (FindLiveObjects: 0.131700 ms CreateObjectMapping: 0.051000 ms MarkObjects: 2.500800 ms  DeleteObjects: 0.061800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -264,111 +179,85 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 122.165881 seconds.
-  path: Assets/Resources/Assets/FogOfWar/Vision.prefab
-  artifactKey: Guid(977f425355e7def47a087f195d0e997c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/FogOfWar/Vision.prefab using Guid(977f425355e7def47a087f195d0e997c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '981bb913e149500363ea196e0cf3feea') in 0.122915 seconds 
+  Time since last request: 70.943904 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Shieldman_L1.prefab
+  artifactKey: Guid(cb68e858baa27054992c912eaa4cc093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Shieldman_L1.prefab using Guid(cb68e858baa27054992c912eaa4cc093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8e9f8b2cc6b2164f64d5b077dbaacd') in 0.152578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.532594 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Shieldman_L3.prefab
+  artifactKey: Guid(7af9181560174854fb61c8279a020de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Shieldman_L3.prefab using Guid(7af9181560174854fb61c8279a020de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45e05b9d621a2646e178aaac837395c9') in 0.125536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.431490 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Swordman_L1.prefab
+  artifactKey: Guid(312b49af41fb3e4408c1aadba9ae6416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Swordman_L1.prefab using Guid(312b49af41fb3e4408c1aadba9ae6416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd275216e10807d9afaf9033a86b1051') in 0.117785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.854438 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Swordman_L2.prefab
+  artifactKey: Guid(8f7b17c4fcd39f04fabd1e0e68f39e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Swordman_L2.prefab using Guid(8f7b17c4fcd39f04fabd1e0e68f39e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6599000eb230ddc73e0495ecde3b42f9') in 0.125747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 90.541255 seconds.
+  path: Assets/Resources/Prefab/AttackRange
+  artifactKey: Guid(db5a7d898a1deff40896d75d94fc8068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/AttackRange using Guid(db5a7d898a1deff40896d75d94fc8068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '955f798578c0c20684719a7e8f6f0b8b') in 0.010694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.548538 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc16e8d025d50a0cdc4caf7dfbc8345') in 0.012853 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001847 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.888 seconds
-Domain Reload Profiling:
-	ReloadAssembly (888ms)
-		BeginReloadAssembly (94ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (743ms)
-			LoadAssemblies (80ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (286ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (265ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (186ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1494 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.2 MB.
-System memory in use after: 148.3 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2011.
-Total: 2.346800 ms (FindLiveObjects: 0.111200 ms CreateObjectMapping: 0.043200 ms MarkObjects: 2.141800 ms  DeleteObjects: 0.049700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002556 seconds.
+Registered in 0.002575 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.922 seconds
+- Completed reload, in  0.943 seconds
 Domain Reload Profiling:
-	ReloadAssembly (923ms)
-		BeginReloadAssembly (108ms)
+	ReloadAssembly (943ms)
+		BeginReloadAssembly (109ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (760ms)
-			LoadAssemblies (88ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (777ms)
+			LoadAssemblies (96ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (290ms)
+			SetupTypeCache (276ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (273ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (295ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (193ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (207ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1496 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.3 MB.
-System memory in use after: 148.4 MB.
+Unloading 1494 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.4 MB.
+System memory in use after: 163.5 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2016.
-Total: 2.335300 ms (FindLiveObjects: 0.113800 ms CreateObjectMapping: 0.045200 ms MarkObjects: 2.125200 ms  DeleteObjects: 0.050000 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2011.
+Total: 2.446100 ms (FindLiveObjects: 0.113500 ms CreateObjectMapping: 0.059800 ms MarkObjects: 2.167100 ms  DeleteObjects: 0.105000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -382,199 +271,245 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2422.082769 seconds.
-  path: Assets/Resources/Assets/Hovl Studio/AOE Magic spells Vol.1
-  artifactKey: Guid(2a4a2ba7ad107514592eb523ce27a19e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/Hovl Studio/AOE Magic spells Vol.1 using Guid(2a4a2ba7ad107514592eb523ce27a19e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa4485b10ebe8a72e4cb7ffd36e7341') in 0.012706 seconds 
+  Time since last request: 21.933332 seconds.
+  path: Assets/Resources/Assets/FogOfWar/Vision.prefab
+  artifactKey: Guid(977f425355e7def47a087f195d0e997c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/FogOfWar/Vision.prefab using Guid(977f425355e7def47a087f195d0e997c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c119b1206b1052dc4b93b35976ad436b') in 0.065272 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 159.553570 seconds.
-  path: Assets/Resources/Assets/Hovl Studio
-  artifactKey: Guid(0b31d124a34f94241b3b5fbaa8745367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/Hovl Studio using Guid(0b31d124a34f94241b3b5fbaa8745367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be46c41a31eb40a61346a2a4f4465ab') in 0.012310 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.126973 seconds.
-  path: Assets/Resources/Assets/Hovl Studio/3D Lasers Pack/Demo scene lasers
-  artifactKey: Guid(0679aa7abc8789d46a2cad714d8a3578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/Hovl Studio/3D Lasers Pack/Demo scene lasers using Guid(0679aa7abc8789d46a2cad714d8a3578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a4dbb418b8a3d8f1135bc69a20a56f') in 0.011002 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.988292 seconds.
-  path: Assets/Resources/Assets/Hovl Studio/3D Lasers Pack
-  artifactKey: Guid(bf142a722ea48a944860e19f4f962cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/Hovl Studio/3D Lasers Pack using Guid(bf142a722ea48a944860e19f4f962cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aad8368413c6d3fa2d3d16ad6a60c14') in 0.008872 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.312679 seconds.
-  path: Assets/LGJ
-  artifactKey: Guid(56f0096a6351c234cb436b5a36407835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LGJ using Guid(56f0096a6351c234cb436b5a36407835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6882d71fa3fa833461c9c60b7a1e61bc') in 0.012480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 35.393017 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.029324 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.763854 seconds.
-  path: Assets/Resources
-  artifactKey: Guid(0924435b61fc87341909150f670d31e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources using Guid(0924435b61fc87341909150f670d31e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb3bdb37743ae1c058c7e89ab5bcf4bc') in 0.026692 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.403512 seconds.
-  path: Assets/Smitesoft
-  artifactKey: Guid(d9c6dfe749907274a9d8636c04724cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Smitesoft using Guid(d9c6dfe749907274a9d8636c04724cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0df18d02ff9aa8230779b8b6c5a77f6') in 0.008441 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.288290 seconds.
-  path: Assets/Smitesoft/Colorize Palette Modifier
-  artifactKey: Guid(858dfc4e9b3ffec42be589076865a119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Smitesoft/Colorize Palette Modifier using Guid(858dfc4e9b3ffec42be589076865a119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b6a3c869644ed1063980bec28ba700d') in 0.011336 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.553320 seconds.
-  path: Assets/Smitesoft/Colorize Palette Modifier/Demo
-  artifactKey: Guid(24960eaf09df64b4da43d36056860b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Smitesoft/Colorize Palette Modifier/Demo using Guid(24960eaf09df64b4da43d36056860b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f53eb65257980032bfd6e3be41ea3a') in 0.010040 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.137534 seconds.
-  path: Assets/Smitesoft/Colorize Palette Modifier/Demo/BuiltInRP_Demo
-  artifactKey: Guid(02ab651a5bd37ad4390a5e4d11a79356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Smitesoft/Colorize Palette Modifier/Demo/BuiltInRP_Demo using Guid(02ab651a5bd37ad4390a5e4d11a79356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a290f590fa70539c692bbbaf2767e4c') in 0.010071 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.819130 seconds.
-  path: Assets/Smitesoft/Colorize Palette Modifier/Demo/BuiltInRP_Demo/BRP_Demo.unity
-  artifactKey: Guid(6dc637d0121730a49b666e110c52df33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Smitesoft/Colorize Palette Modifier/Demo/BuiltInRP_Demo/BRP_Demo.unity using Guid(6dc637d0121730a49b666e110c52df33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169e529110f8dd092c223677fa15b358') in 0.009358 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 110.483391 seconds.
-  path: Assets/Smitesoft/Colorize Palette Modifier/Generated Materials/Material_2
-  artifactKey: Guid(88a877bd0544e474b8873b7edeea99dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Smitesoft/Colorize Palette Modifier/Generated Materials/Material_2 using Guid(88a877bd0544e474b8873b7edeea99dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fde2f8c357148f88f2ed03e146b6ad7') in 0.009181 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.418666 seconds.
-  path: Assets/Smitesoft/Colorize Palette Modifier/Prefabs
-  artifactKey: Guid(75aaf1f448956b745b64f4e799137447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Smitesoft/Colorize Palette Modifier/Prefabs using Guid(75aaf1f448956b745b64f4e799137447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd73d169e2b3cedc3d353fee95d81a0b') in 0.009742 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 296.402921 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(54b1030b31df31a438ce16817a476a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(54b1030b31df31a438ce16817a476a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6507dd7a4478edc7b20cbf59cf87f5b') in 0.009960 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.076181 seconds.
-  path: Assets/Scenes/MainScene.unity
-  artifactKey: Guid(7a9bd330fbafc0a48a1ad023b74214e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScene.unity using Guid(7a9bd330fbafc0a48a1ad023b74214e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902e22f541211b4c2d37f6ddc7ee2a33') in 0.008541 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 594.445740 seconds.
-  path: Assets/Resources/Assets/Smitesoft/Colorize Palette Modifier/Demo/URP_Demo
-  artifactKey: Guid(5db965758c13d8046af0c3fdae6dea7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/Smitesoft/Colorize Palette Modifier/Demo/URP_Demo using Guid(5db965758c13d8046af0c3fdae6dea7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a4d05e2c5b238af96a988f3506af96') in 0.011009 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.304575 seconds.
-  path: Assets/Resources/Assets/ToonyTinyPeople
-  artifactKey: Guid(3d6bd408f784b59489355cff41bfda4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/ToonyTinyPeople using Guid(3d6bd408f784b59489355cff41bfda4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739e353b45234d9453b8cf9d98776df0') in 0.012485 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.574352 seconds.
-  path: Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Paladin.prefab
-  artifactKey: Guid(675bfa49ad0f04c47b900d8546860383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Paladin.prefab using Guid(675bfa49ad0f04c47b900d8546860383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8d667e674633fdaf3198fca4f729f0c') in 0.139441 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.588728 seconds.
-  path: Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_Scout.prefab
-  artifactKey: Guid(3444512bc6a211a4fbc66458b13748ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_Scout.prefab using Guid(3444512bc6a211a4fbc66458b13748ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf3424ebed6abd6d5f7f7fac34be297') in 0.061632 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.144454 seconds.
-  path: Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_Paladin.prefab
-  artifactKey: Guid(3b5b8018d62c7fb43b2805cf19ffaff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_Paladin.prefab using Guid(3b5b8018d62c7fb43b2805cf19ffaff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4949aed536192ee2e555f7c4afab49bf') in 0.075769 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.114810 seconds.
-  path: Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_Knight.prefab
-  artifactKey: Guid(511c566bd068dca4bb9794da5f53052a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_Knight.prefab using Guid(511c566bd068dca4bb9794da5f53052a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb508b67c3db94c8e0c3b93920d25fa8') in 0.078554 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.587162 seconds.
-  path: Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_King.prefab
-  artifactKey: Guid(a36479667d1b0f74bbd661b17c3f9476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_King.prefab using Guid(a36479667d1b0f74bbd661b17c3f9476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd17e42e6737f78f83bc316aa0abaa355') in 0.073268 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.707065 seconds.
-  path: Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_Mage.prefab
-  artifactKey: Guid(bc0e691c888319a4daf7fd1c112e7d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_Mage.prefab using Guid(bc0e691c888319a4daf7fd1c112e7d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c9ee514c4f6d4da8a401f9925edaf8') in 0.068519 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.643206 seconds.
-  path: Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_Priest.prefab
-  artifactKey: Guid(9948d4669f9006844a963afb88d60afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/ToonyTinyPeople/TT_RTS/TT_RTS_Standard/prefabs/TT_Mounted_Priest.prefab using Guid(9948d4669f9006844a963afb88d60afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff2f10e05fed2d33d356b361d94dfc3b') in 0.068006 seconds 
+  Time since last request: 357.508320 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Swordman_L3.prefab
+  artifactKey: Guid(aa6897da616be524c911449d5314fb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Swordman_L3.prefab using Guid(aa6897da616be524c911449d5314fb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83a6a86fd2fdac543b7912e8f2805ea6') in 0.164884 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002551 seconds.
+Registered in 0.001959 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.860 seconds
+- Completed reload, in  0.864 seconds
 Domain Reload Profiling:
-	ReloadAssembly (860ms)
-		BeginReloadAssembly (93ms)
+	ReloadAssembly (864ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (715ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (260ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (260ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (179ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1494 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.5 MB.
+System memory in use after: 163.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2015.
+Total: 2.645500 ms (FindLiveObjects: 0.138500 ms CreateObjectMapping: 0.045500 ms MarkObjects: 2.322800 ms  DeleteObjects: 0.137900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 69.925454 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Archer_L2.prefab
+  artifactKey: Guid(ce9fc3ed5f6becd419979ac6c4ea696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Archer_L2.prefab using Guid(ce9fc3ed5f6becd419979ac6c4ea696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ec50a3cc2031eb958afa49f703afafc') in 0.219315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.039969 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Archer_L3.prefab
+  artifactKey: Guid(bd331ff5efffd9f4ead0065a6e560054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Archer_L3.prefab using Guid(bd331ff5efffd9f4ead0065a6e560054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fde4481e1b605dede4d474166998ed3') in 0.123411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.279916 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_h1.prefab
+  artifactKey: Guid(e795532dd6ab51f4e91e7b951e9278c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_h1.prefab using Guid(e795532dd6ab51f4e91e7b951e9278c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e760cf17029c15b98f4e81162f95ddb8') in 0.153592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.364689 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Archer_L3.prefab
+  artifactKey: Guid(bd331ff5efffd9f4ead0065a6e560054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Archer_L3.prefab using Guid(bd331ff5efffd9f4ead0065a6e560054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca2676c103a2e7885f7551796e623e6') in 0.121637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.280927 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Archer_L2.prefab
+  artifactKey: Guid(ce9fc3ed5f6becd419979ac6c4ea696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Archer_L2.prefab using Guid(ce9fc3ed5f6becd419979ac6c4ea696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472bafaac5f86c8430fb60c046a7ab9d') in 0.142207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.188727 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Archer_L1.prefab
+  artifactKey: Guid(f334844c48a619f4abb86e5f647a19e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Archer_L1.prefab using Guid(f334844c48a619f4abb86e5f647a19e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e322d98356da858409d0d51d7533e878') in 0.118793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.485645 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_h1.prefab
+  artifactKey: Guid(e795532dd6ab51f4e91e7b951e9278c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_h1.prefab using Guid(e795532dd6ab51f4e91e7b951e9278c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950284d22d4916e0453d044b83610d28') in 0.222087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.817236 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_h3.prefab
+  artifactKey: Guid(60f64a2d73a95ac4bba565f9c68b6ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_h3.prefab using Guid(60f64a2d73a95ac4bba565f9c68b6ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95d096424bc0b63804ed442763ac6fe5') in 0.154969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.416772 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_h2.prefab
+  artifactKey: Guid(fac71d21a1f4ff04aab91b4ff98d2e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_h2.prefab using Guid(fac71d21a1f4ff04aab91b4ff98d2e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0dc441676589656615419c80359eba') in 0.159048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.036520 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Swordman_L2.prefab
+  artifactKey: Guid(8f7b17c4fcd39f04fabd1e0e68f39e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Swordman_L2.prefab using Guid(8f7b17c4fcd39f04fabd1e0e68f39e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b868867a65096218063243e40c0c9a') in 0.121744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 440.925554 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df36c63176743817c2650afa51f94a47') in 0.017908 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002081 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.396 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1397ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1199ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (573ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (316ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1494 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.8 MB.
+System memory in use after: 163.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2019.
+Total: 2.833600 ms (FindLiveObjects: 0.163200 ms CreateObjectMapping: 0.061100 ms MarkObjects: 2.503800 ms  DeleteObjects: 0.104500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 377.034483 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Swordman_L1.prefab
+  artifactKey: Guid(312b49af41fb3e4408c1aadba9ae6416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Swordman_L1.prefab using Guid(312b49af41fb3e4408c1aadba9ae6416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a292430c69660ed913608b7c7883c0b') in 0.776151 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001942 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Domain Reload Profiling:
+	ReloadAssembly (920ms)
+		BeginReloadAssembly (96ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (711ms)
-			LoadAssemblies (80ms)
+		EndReloadAssembly (771ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (257ms)
+			SetupTypeCache (295ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (262ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (275ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (182ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (189ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1496 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 162.9 MB.
-System memory in use after: 163.0 MB.
+Unloading 1494 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.8 MB.
+System memory in use after: 164.0 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2021.
-Total: 2.263600 ms (FindLiveObjects: 0.121100 ms CreateObjectMapping: 0.048100 ms MarkObjects: 2.045100 ms  DeleteObjects: 0.048300 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2023.
+Total: 2.616500 ms (FindLiveObjects: 0.113700 ms CreateObjectMapping: 0.042800 ms MarkObjects: 2.338900 ms  DeleteObjects: 0.120400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -587,148 +522,1188 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 83.639241 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Shieldman_L2.prefab
+  artifactKey: Guid(55df7257b92e43c42853f3278dddce1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Shieldman_L2.prefab using Guid(55df7257b92e43c42853f3278dddce1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df37880740c1215709b087731cc8e42') in 0.246553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.017094 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Shieldman_L3.prefab
+  artifactKey: Guid(7af9181560174854fb61c8279a020de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Shieldman_L3.prefab using Guid(7af9181560174854fb61c8279a020de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ccb077d541263cb823e1b048f07a04') in 0.128760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.595738 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Shieldman_L2.prefab
+  artifactKey: Guid(55df7257b92e43c42853f3278dddce1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Shieldman_L2.prefab using Guid(55df7257b92e43c42853f3278dddce1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95223b793c8ec92b29a6cd8f295a084a') in 0.122876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.489091 seconds.
+  path: Assets/Resources/Prefab/E_Units/E_Shieldman_L1.prefab
+  artifactKey: Guid(cb68e858baa27054992c912eaa4cc093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/E_Units/E_Shieldman_L1.prefab using Guid(cb68e858baa27054992c912eaa4cc093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355a8e4b3c82e6c9ad071faf3a85c01d') in 0.126175 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002420 seconds.
+Registered in 0.002775 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.894 seconds
+- Completed reload, in  1.238 seconds
 Domain Reload Profiling:
-	ReloadAssembly (894ms)
-		BeginReloadAssembly (92ms)
+	ReloadAssembly (1239ms)
+		BeginReloadAssembly (142ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (750ms)
-			LoadAssemblies (78ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1042ms)
+			LoadAssemblies (94ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (298ms)
+			SetupTypeCache (302ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (262ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (451ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (322ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1494 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.1 MB.
+System memory in use after: 164.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2027.
+Total: 3.104600 ms (FindLiveObjects: 0.227200 ms CreateObjectMapping: 0.062100 ms MarkObjects: 2.719000 ms  DeleteObjects: 0.093900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 860.142183 seconds.
+  path: Assets/Resources/Assets/FogOfWar
+  artifactKey: Guid(e872b7a1659985449af3764b09fe405e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/FogOfWar using Guid(e872b7a1659985449af3764b09fe405e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9757d9a98c965049375462ff05c1a1') in 0.016087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.588873 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_47.PNG
+  artifactKey: Guid(b8294dddb4ca55d44bbae446b55842e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_47.PNG using Guid(b8294dddb4ca55d44bbae446b55842e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3c3308c381c4a88dbbbc42dc520b147') in 0.114053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.458970 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_48.PNG
+  artifactKey: Guid(5f74c71394cc30041a5df548d7e3603c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_48.PNG using Guid(5f74c71394cc30041a5df548d7e3603c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7def092989e8f2ee5cc9c706e3fedaa4') in 0.018899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.966129 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_60.PNG
+  artifactKey: Guid(ae457c143d7667446bab8f487860848a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_60.PNG using Guid(ae457c143d7667446bab8f487860848a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca5e2cf315dcb266953f1bc56afc284') in 0.016237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.503431 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_61.PNG
+  artifactKey: Guid(2dd272228ca27e04a829a4332b21fd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_61.PNG using Guid(2dd272228ca27e04a829a4332b21fd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73dd872d90eb983132f4a2b0876fef88') in 0.017483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.474789 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_63.PNG
+  artifactKey: Guid(fcab7f7fd269ab544ba074da1b29e0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_63.PNG using Guid(fcab7f7fd269ab544ba074da1b29e0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f7dcb0f011dbe5a196f2e108cb7cd47') in 0.017986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.629623 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_74.PNG
+  artifactKey: Guid(1b9f906ed60b695468877882e9ff2db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_74.PNG using Guid(1b9f906ed60b695468877882e9ff2db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30eb7f74e03b7085f88a61af6605928e') in 0.017900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.482236 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_73.PNG
+  artifactKey: Guid(031ae7b26bf32d44582cb6ead906707a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_73.PNG using Guid(031ae7b26bf32d44582cb6ead906707a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24f24a88a28e7a3cf178bfd30322ef9c') in 0.017581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.100804 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_89.PNG
+  artifactKey: Guid(20a27b43f4f6d494fa7391fd20ed9bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_89.PNG using Guid(20a27b43f4f6d494fa7391fd20ed9bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0535132372c8d50900e0acd5b614421') in 0.016382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.485864 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_90.PNG
+  artifactKey: Guid(ccc6db2d2e7a8a541825243f50c505e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_90.PNG using Guid(ccc6db2d2e7a8a541825243f50c505e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '376c841156b331cf89b5c8cfc3b82335') in 0.017544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.483991 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_92.PNG
+  artifactKey: Guid(b03e41142bb12bd488b58669aca4c790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_92.PNG using Guid(b03e41142bb12bd488b58669aca4c790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa900e76437f0a5eb241bd9bebefacf') in 0.017663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.122408 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_100.PNG
+  artifactKey: Guid(ca3049dc1e212e54ebbef7e2b4ca6370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_100.PNG using Guid(ca3049dc1e212e54ebbef7e2b4ca6370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c7aa90acd85c4837c2a1338cb5d85fc') in 0.018538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.014165 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_93.PNG
+  artifactKey: Guid(c0d346839c86f6b40a1a649f1cbd0344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_93.PNG using Guid(c0d346839c86f6b40a1a649f1cbd0344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825a965e3411cbed1aafa2ea3f3e6484') in 0.023453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.440242 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_94.PNG
+  artifactKey: Guid(47d571c1e537abf468a627b16e2caeed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_94.PNG using Guid(47d571c1e537abf468a627b16e2caeed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7bbfc53dbeb0287676ab2626c5a286') in 0.016491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.418437 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_96.PNG
+  artifactKey: Guid(464997b38dca84b4a9a73b97fccb1d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_96.PNG using Guid(464997b38dca84b4a9a73b97fccb1d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008f12ce1c8b908bcf96152dc20b08a7') in 0.019103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.447605 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_98.PNG
+  artifactKey: Guid(71cc956e35dbeb741a94e312ef928009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_98.PNG using Guid(71cc956e35dbeb741a94e312ef928009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1fe3369aac44a6fe5004f8f8bae22ff') in 0.017658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.937292 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_46.PNG
+  artifactKey: Guid(8fbfc5c2d4b4cdf43b38c8be76182c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_46.PNG using Guid(8fbfc5c2d4b4cdf43b38c8be76182c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1ec3113b890ccb294cf385da9b5326') in 0.017418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.362453 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_45.PNG
+  artifactKey: Guid(d47e03d05978a1644838312ee473405a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_45.PNG using Guid(d47e03d05978a1644838312ee473405a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e41817784a463f4515b7b8c977ad405b') in 0.016829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.850362 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_33.PNG
+  artifactKey: Guid(3f6d9989497578d47804ae1f3a002c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_33.PNG using Guid(3f6d9989497578d47804ae1f3a002c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99587a7b32388a986fc177db5ae55741') in 0.015434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.345478 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_31.PNG
+  artifactKey: Guid(3d6ae732e33b92e409a91414fa59e077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_31.PNG using Guid(3d6ae732e33b92e409a91414fa59e077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c8af4138683fb170b55b87c517372c') in 0.019426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.392123 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_29.PNG
+  artifactKey: Guid(2c514f5519324d84fb2c2dc75899de9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_29.PNG using Guid(2c514f5519324d84fb2c2dc75899de9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de6c59c9e69926a9dbc9b60359811cb7') in 0.016987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.895331 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_26.PNG
+  artifactKey: Guid(39385d03853d8d14896cce8e694bf2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_26.PNG using Guid(39385d03853d8d14896cce8e694bf2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609a1a1dad0df80e206b8eed4f047075') in 0.018221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.655442 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_24.PNG
+  artifactKey: Guid(8c24568e7bc3c624892690ff5497ed99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_24.PNG using Guid(8c24568e7bc3c624892690ff5497ed99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1805b1c3d00b4e70df1fd892cf35f04') in 0.019024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.478680 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_22.PNG
+  artifactKey: Guid(8e1b0020219c54e49983b3b0095f00c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_22.PNG using Guid(8e1b0020219c54e49983b3b0095f00c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c36b2f29ffa35e90312da6879f3efa') in 0.021569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.862511 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_17.PNG
+  artifactKey: Guid(fb147cc8db6048c4ba8cd45c089e8e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_17.PNG using Guid(fb147cc8db6048c4ba8cd45c089e8e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e850eda2f0dea3e8e95819f27547d217') in 0.016183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.556746 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_19.PNG
+  artifactKey: Guid(6da25e8886cdc23479ef628601e63095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_19.PNG using Guid(6da25e8886cdc23479ef628601e63095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fb9f362de9cc48c8f770a6512222c23') in 0.019341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.929545 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_14.PNG
+  artifactKey: Guid(a9ddff3cc355c494a895e0a1e321c418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_14.PNG using Guid(a9ddff3cc355c494a895e0a1e321c418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b66024977032e394b3b1f123da856c3') in 0.018141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.846241 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_11.PNG
+  artifactKey: Guid(b6bfd958ab908574194094a0c4e135a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_11.PNG using Guid(b6bfd958ab908574194094a0c4e135a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f6573c38169950a0e8a89b405f49a76') in 0.018775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.585333 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_09.PNG
+  artifactKey: Guid(37b443a85c1285e4999cadbb25efa0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_09.PNG using Guid(37b443a85c1285e4999cadbb25efa0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef74bfb534da9770cbbdd69e4290128') in 0.019826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.182901 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_01.PNG
+  artifactKey: Guid(dfdb1622b40c68f48ba9dc17f8d10a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_01.PNG using Guid(dfdb1622b40c68f48ba9dc17f8d10a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d3bb8175b7de859090a9465cd20699') in 0.016032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.653337 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_03.PNG
+  artifactKey: Guid(719c8925c23f7ba42a8cb2a56dc11a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_03.PNG using Guid(719c8925c23f7ba42a8cb2a56dc11a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa026e01e8b4e437724c52d1fb896d9') in 0.033675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.323153 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_04.PNG
+  artifactKey: Guid(e3e2e82d47f6e994790cd9670cc74a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_04.PNG using Guid(e3e2e82d47f6e994790cd9670cc74a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3422843266bfa6a58983a8c2922f0e2') in 0.020229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.360917 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_05.PNG
+  artifactKey: Guid(a72a0adb33122dd478dcfd2935db36a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_05.PNG using Guid(a72a0adb33122dd478dcfd2935db36a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b087ffd4de5d13a064a7050886ea7d') in 0.019732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.361401 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_07.PNG
+  artifactKey: Guid(48f943a283989034d9ea8bae43755e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_07.PNG using Guid(48f943a283989034d9ea8bae43755e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b941fa4bd17f99089393f96a51c8d54') in 0.018415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.530125 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_20.PNG
+  artifactKey: Guid(1a1ad9669ac31404ca0afc4535814831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_20.PNG using Guid(1a1ad9669ac31404ca0afc4535814831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec697bc6faa2ea7fe4b48583408de86') in 0.022455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.901438 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_39.PNG
+  artifactKey: Guid(ad14c2a21c76f1949adaa9df18c5b37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_39.PNG using Guid(ad14c2a21c76f1949adaa9df18c5b37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c023a4b2fb6033e6a249078dbe641224') in 0.015787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.432238 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_40.PNG
+  artifactKey: Guid(5404812c647d17843a02aa95d9909aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_40.PNG using Guid(5404812c647d17843a02aa95d9909aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff6cfba233b65d8ea62529c79893632') in 0.017709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.362897 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_104.PNG
+  artifactKey: Guid(2c3968d99ae180841bdb36cbaf761012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_104.PNG using Guid(2c3968d99ae180841bdb36cbaf761012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1b7f3a96ad34ef0a3195be10dbd35dc') in 0.017973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.354785 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_106.PNG
+  artifactKey: Guid(1a8a0310bd1b10b43a8fc0640044bff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_106.PNG using Guid(1a8a0310bd1b10b43a8fc0640044bff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d7bd96dde663fe0b3e8f3616540a4c') in 0.017506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.440052 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_108.PNG
+  artifactKey: Guid(2c548924fc82fae4b83898875c158c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_108.PNG using Guid(2c548924fc82fae4b83898875c158c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a65d34e54704baeaeaf7d8843bf686') in 0.018827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.627658 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_16.png
+  artifactKey: Guid(c16c59e96a8126b4b95177b5a623b9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_16.png using Guid(c16c59e96a8126b4b95177b5a623b9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e111bc26cc52d6213a4274064d8a9cc4') in 0.022832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.943691 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_15.png
+  artifactKey: Guid(cb559d03f3ab4174aa3173b8e30caa0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_15.png using Guid(cb559d03f3ab4174aa3173b8e30caa0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82be6d8a149b3004b0be286fb0b2a388') in 0.022140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.327052 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_129.png
+  artifactKey: Guid(2acc1001fb8037d40b240bdfddbb14e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_129.png using Guid(2acc1001fb8037d40b240bdfddbb14e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee0b7a65ed05eadbcd40d02d744e974') in 0.033324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.388626 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_128.png
+  artifactKey: Guid(e610d291ced29d94689a94dcf5c42cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_128.png using Guid(e610d291ced29d94689a94dcf5c42cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08734258c54236678a87abaebaa3180d') in 0.021183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.461266 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_127.png
+  artifactKey: Guid(216088e7a65fd774eb76f7ff2223cbea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_127.png using Guid(216088e7a65fd774eb76f7ff2223cbea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086179e1bd63d4602d3f76b9ca16e582') in 0.021318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.410935 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_126.png
+  artifactKey: Guid(1cef6cfac6c2e8749860b4b49bf6e189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_126.png using Guid(1cef6cfac6c2e8749860b4b49bf6e189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6434d3ecbb135bea3f23e870c77b642') in 0.023218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.601764 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_134.png
+  artifactKey: Guid(d73b27a7c00793a4abec46dec15b213d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_134.png using Guid(d73b27a7c00793a4abec46dec15b213d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4edee554cbc9dde43b00db9dba00a844') in 0.021272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.494106 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_137.png
+  artifactKey: Guid(808349fabdbfbcf48b532d8857ee189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_137.png using Guid(808349fabdbfbcf48b532d8857ee189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe7c9bbbce9ac9b789b374ae13e8d6f') in 0.021663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.521104 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_138.png
+  artifactKey: Guid(1234dff33f96da448a72ba6dd9f03cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_138.png using Guid(1234dff33f96da448a72ba6dd9f03cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50d48f95a443c3b93ea4d3056fd0ec6a') in 0.022411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.578703 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_139.png
+  artifactKey: Guid(dfa163075dc83594c8883692d331739b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_139.png using Guid(dfa163075dc83594c8883692d331739b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b80fb7456d3bf16372181f0ed26561df') in 0.023122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.913596 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_64.png
+  artifactKey: Guid(ac4ebe2d9fc142a479211ca45d3eef55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_64.png using Guid(ac4ebe2d9fc142a479211ca45d3eef55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b26be5dff08dfcdae27611b1737975d') in 0.018152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.066347 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_65.png
+  artifactKey: Guid(f0e0e8d3930bb304c8e44db7f5431c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_65.png using Guid(f0e0e8d3930bb304c8e44db7f5431c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6080388ec8acf684a03c155690438baf') in 0.021314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.578224 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_63.png
+  artifactKey: Guid(d0aaabfdf0d1dfc49b3242cd4ee30396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_63.png using Guid(d0aaabfdf0d1dfc49b3242cd4ee30396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af63aba9bebc98bdfe4042e21a1ca682') in 0.022780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.976749 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_57.png
+  artifactKey: Guid(cb6a5cf4422fb9442bef3d1ffd461db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_57.png using Guid(cb6a5cf4422fb9442bef3d1ffd461db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd973b34466456ef01d024324db3d60b0') in 0.022523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.436043 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_58.png
+  artifactKey: Guid(7a83c00e76fe56541ad837bc6885e602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_58.png using Guid(7a83c00e76fe56541ad837bc6885e602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca09319f55be060aca8ee61cedd90f79') in 0.022387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.087494 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_47.png
+  artifactKey: Guid(6d41c2c65bbe84044abcc995eafe26d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_47.png using Guid(6d41c2c65bbe84044abcc995eafe26d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52594e6a32d0b45ea80d53007a011434') in 0.023500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.454177 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_50.png
+  artifactKey: Guid(d00f50d3badc6ee498feb4678f67e2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_50.png using Guid(d00f50d3badc6ee498feb4678f67e2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aadaa323f7c6138b43b92eca415073d7') in 0.021330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.495763 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_51.png
+  artifactKey: Guid(56b8aa12255ecf840a31ff10fd6ca0c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_51.png using Guid(56b8aa12255ecf840a31ff10fd6ca0c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca8dbde984ac35eacf42ce37393630b') in 0.020313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.946197 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_52.png
+  artifactKey: Guid(c7ffbcb7ecddf2945aa660a46701c72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_52.png using Guid(c7ffbcb7ecddf2945aa660a46701c72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef75c5f7df1ae3bae04e78863ddf5c6') in 0.021223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.468099 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_53.png
+  artifactKey: Guid(84c226b61d065f84795e1481f140f106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_53.png using Guid(84c226b61d065f84795e1481f140f106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2602131d5ecc247b34e30e2d04404a37') in 0.022482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.484955 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_49.png
+  artifactKey: Guid(b37c43200af211746a882480666c3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_49.png using Guid(b37c43200af211746a882480666c3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be73527302701c3f3b8c9a565001416') in 0.053475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.384207 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_48.png
+  artifactKey: Guid(079a1688fe7d14a478e7895206460631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_48.png using Guid(079a1688fe7d14a478e7895206460631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da96efe5ed6583f9672fd29e9c7449ee') in 0.023570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.174068 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_43.png
+  artifactKey: Guid(6d8d319af2846724fab089e4b258888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_43.png using Guid(6d8d319af2846724fab089e4b258888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a255b9294e515b925dbe9ec54d95dab8') in 0.021895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.737495 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_42.png
+  artifactKey: Guid(e5d0d4399129e4c4b82fc13e1a4a304e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_42.png using Guid(e5d0d4399129e4c4b82fc13e1a4a304e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c53a3468550ea08ea075187cfc08c1') in 0.042085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.648918 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_40.png
+  artifactKey: Guid(587405d9a6469424a9217a834efe2261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_40.png using Guid(587405d9a6469424a9217a834efe2261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e0d895de876f32b2c1c4c216a1a342') in 0.018361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.400898 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_39.png
+  artifactKey: Guid(bb5ffa10c29ebe24681e5058a2fa577b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_39.png using Guid(bb5ffa10c29ebe24681e5058a2fa577b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957bb3ee591c815a07b79c5dba7410e3') in 0.020549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.578128 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_38.png
+  artifactKey: Guid(b7d7d1305956d7348b6dc1c69fd657c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_38.png using Guid(b7d7d1305956d7348b6dc1c69fd657c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36304ed2fc6f0da0ecc825928254087') in 0.021048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.584542 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_44.png
+  artifactKey: Guid(f56699e08f0007b479eaa961fe3f0682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_44.png using Guid(f56699e08f0007b479eaa961fe3f0682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab19da434a75740189b772fc3e13a863') in 0.022658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.743290 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_30.png
+  artifactKey: Guid(19fd210344baf7c47a4a93af073216d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_30.png using Guid(19fd210344baf7c47a4a93af073216d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '088c448c3fd295b3680e384ee71680bb') in 0.023434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.241351 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_29.png
+  artifactKey: Guid(d21d4ad4fb426824c8ad12343d2fdf32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_29.png using Guid(d21d4ad4fb426824c8ad12343d2fdf32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bf9173380e045ac383ab61aa5837f24') in 0.029016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.295471 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_28.png
+  artifactKey: Guid(b0c494049dcead24c97e1233662121d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_28.png using Guid(b0c494049dcead24c97e1233662121d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29bbb7962b9abdd470022c1e4dc3e735') in 0.028196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.303519 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_27.png
+  artifactKey: Guid(8d4583e3e7ba2234dbd2dda625f4428f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_27.png using Guid(8d4583e3e7ba2234dbd2dda625f4428f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce85669a964450899bba665651d1e25') in 0.030106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.420896 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_26.png
+  artifactKey: Guid(174570ce504d1a44495de8c5b7aad3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_26.png using Guid(174570ce504d1a44495de8c5b7aad3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7703c2be95f914be3349da674dd855f6') in 0.023896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.336724 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_25.png
+  artifactKey: Guid(40e74afcfe4e54c499f911aeb30b5d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_25.png using Guid(40e74afcfe4e54c499f911aeb30b5d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca9cdefabfceb50b04e7e71008beb07') in 0.021940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.348394 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_24.png
+  artifactKey: Guid(ba9f519407adbfb4f920934b9809d81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_24.png using Guid(ba9f519407adbfb4f920934b9809d81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f876fef018965b71d5124e0ba6894d') in 0.023917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.292615 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_23.png
+  artifactKey: Guid(7abd32467b0591249a3745a7bcd12d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_23.png using Guid(7abd32467b0591249a3745a7bcd12d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '686a632a3b9c433ac4d371ea5e1e4477') in 0.029675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.352863 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_22.png
+  artifactKey: Guid(ba87c6b546bf67540858aad0f3c59cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_22.png using Guid(ba87c6b546bf67540858aad0f3c59cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379d0c4bcaac33522569621f73ff9a3e') in 0.022632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.357816 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_21.png
+  artifactKey: Guid(51def071534f1bc419550c81a62a147a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_21.png using Guid(51def071534f1bc419550c81a62a147a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497eb9ff7a6fae77b60b5dd889a87285') in 0.023405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.240930 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_20.png
+  artifactKey: Guid(1828456e618eb4745ab1c859a7a51cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_20.png using Guid(1828456e618eb4745ab1c859a7a51cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b45c1c1483eb33d29bbc6bc9de5f7b2c') in 0.025938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.941775 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_19.png
+  artifactKey: Guid(ee570fb9907c9384f8fbb02eb82e8548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_19.png using Guid(ee570fb9907c9384f8fbb02eb82e8548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7942f0a2ba5d327fb2066bcffb43e86') in 0.023397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.328995 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_18.png
+  artifactKey: Guid(110ffd5b3ce1e6341885a1509690806f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_18.png using Guid(110ffd5b3ce1e6341885a1509690806f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998f4719d3b0dc03271a159b3f7f3e66') in 0.021074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.356106 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_17.png
+  artifactKey: Guid(2d0927dccbad2794fa9aa639ebbb9e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SpellBookPage05/SpellBook05_17.png using Guid(2d0927dccbad2794fa9aa639ebbb9e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9c129f48457c495a85075dc60c78f0') in 0.027881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 66.740128 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_07.PNG
+  artifactKey: Guid(9b1d732682134584ba1a37d13d0b92ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_07.PNG using Guid(9b1d732682134584ba1a37d13d0b92ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229bad2739cac6c85505fb04904578fb') in 0.018459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.297248 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_28.png
+  artifactKey: Guid(e03d08f74cc9e414fa25c2c98ae269ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_28.png using Guid(e03d08f74cc9e414fa25c2c98ae269ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ac0fe47692cb2688ea1420b94fb760') in 0.039993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3068.459543 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_31.PNG
+  artifactKey: Guid(a30669a46ba0f7d45844abf50c33ff66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_31.PNG using Guid(a30669a46ba0f7d45844abf50c33ff66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f9f5817fe5d018ecdabd78ca98c57b9') in 0.021063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.001520 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_30.PNG
+  artifactKey: Guid(cf4bbf75bd56e3544a5a782f59544801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_30.PNG using Guid(cf4bbf75bd56e3544a5a782f59544801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed7dfc13a8091693835873094405efb7') in 0.020146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.568094 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_29.png
+  artifactKey: Guid(9bd941d67c27a1c4ea126cd6e4483178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_29.png using Guid(9bd941d67c27a1c4ea126cd6e4483178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c64606ef902d6d34c951fa2d4812e832') in 0.017026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.452185 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_26.PNG
+  artifactKey: Guid(e57f7507d39a2b6409e0540b3437b74c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_26.PNG using Guid(e57f7507d39a2b6409e0540b3437b74c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ca8d261464e6d628b687f0c3611a90') in 0.021690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.523610 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_24.png
+  artifactKey: Guid(19d5033ab36df4743b26aead4ccf2fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PNG/violet/v_24.png using Guid(19d5033ab36df4743b26aead4ccf2fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e5ddb878d7c794c514cb651dfd13d5') in 0.018126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.004170 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_20.psd
+  artifactKey: Guid(28c7693151298274ebd27577ed38e783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_20.psd using Guid(28c7693151298274ebd27577ed38e783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a6ab817b1ea2ca1a2d1c7ad444bad8') in 0.024182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.582337 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_28.psd
+  artifactKey: Guid(136f04a5bcc02ab488f810a3bdd3b413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_28.psd using Guid(136f04a5bcc02ab488f810a3bdd3b413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4d252ca7c3b3e1dc45a70a0da97c57') in 0.019530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.739416 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_31.PSD
+  artifactKey: Guid(45ff5293fc268c24c854d29762ca6180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_31.PSD using Guid(45ff5293fc268c24c854d29762ca6180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0adcbf441aac3c88f4c116f59ffad81') in 0.017147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.110609 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_09.PSD
+  artifactKey: Guid(93fea50e0f8fcfe48802805a774f6034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_09.PSD using Guid(93fea50e0f8fcfe48802805a774f6034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e831256ec18be31d887cfca42f962694') in 0.021385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.431541 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_01.PSD
+  artifactKey: Guid(fd02215ad8ff6724fac6b20910f79e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_01.PSD using Guid(fd02215ad8ff6724fac6b20910f79e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be0889a4a83c4cc8a8ab2f1cc4d92007') in 0.022263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.656289 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_19.PSD
+  artifactKey: Guid(48e9b522f6fdad941967490ecae4885c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_19.PSD using Guid(48e9b522f6fdad941967490ecae4885c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7165a35061a39a09679875b793e0b2c0') in 0.021961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.501399 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_20.PSD
+  artifactKey: Guid(e6344c1d00ba77f408bc60419430b7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_20.PSD using Guid(e6344c1d00ba77f408bc60419430b7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5187a4775f045d3679e48a88e89cb100') in 0.021474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.364537 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_21.PSD
+  artifactKey: Guid(5a2ed46ba5a923148a6365ba46c63d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_21.PSD using Guid(5a2ed46ba5a923148a6365ba46c63d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051c8a7f0d3f8f60f624b3ba96d1d3c6') in 0.021445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.168168 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_29.PSD
+  artifactKey: Guid(98ad072013f0d3a4c8333442d04655d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_29.PSD using Guid(98ad072013f0d3a4c8333442d04655d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e2b9cf97fa8a6942c503a5d42f01a9') in 0.026378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.619131 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_31.PSD
+  artifactKey: Guid(2db003fa38623f04189f589900f32ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_31.PSD using Guid(2db003fa38623f04189f589900f32ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60de950046330c30d3681afb0dac4a93') in 0.020233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.014990 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_27.PSD
+  artifactKey: Guid(5a059828343340a46b1ead91d67c8660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_27.PSD using Guid(5a059828343340a46b1ead91d67c8660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44838c527df65c26863b20c00bab4601') in 0.016167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.388283 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_25.PSD
+  artifactKey: Guid(9c71da0b6e2d2cf4e9916998303aa53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_25.PSD using Guid(9c71da0b6e2d2cf4e9916998303aa53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2088e4845152c9dfd9cb7ac09e1a1c') in 0.023903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.381127 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_23.PSD
+  artifactKey: Guid(dfac630372bddc646ab2e677023d2258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/blue/b_23.PSD using Guid(dfac630372bddc646ab2e677023d2258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '142da30e9db565650c94cf2b687c9c9b') in 0.020255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 224.692926 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_29.psd
+  artifactKey: Guid(407d79730320a074e9c86f25da98135c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_29.psd using Guid(407d79730320a074e9c86f25da98135c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b46ba8443ef9b1efc6aa7fd08e52880') in 0.020547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.393601 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_30.psd
+  artifactKey: Guid(65d2be86e47ded44a9c86d3772977af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_30.psd using Guid(65d2be86e47ded44a9c86d3772977af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d77afc6e57dd9efae44279ab8e328c6') in 0.020652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.969106 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_45.psd
+  artifactKey: Guid(402a3b40d5b40e44c8198ae007ffb6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_45.psd using Guid(402a3b40d5b40e44c8198ae007ffb6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd1f00f75cc3a5aa060a68f8d1442408') in 0.022964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.419830 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_44.psd
+  artifactKey: Guid(c670be4f42d037441887f07e9e41ff95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_44.psd using Guid(c670be4f42d037441887f07e9e41ff95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8246108a7c1fa2d474fd6855d2613322') in 0.020081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.365343 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_42.psd
+  artifactKey: Guid(696dc5bb48216134e829d45542a5d26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_42.psd using Guid(696dc5bb48216134e829d45542a5d26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b97c275ec51259420d6d446c368c7b') in 0.022669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.477479 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_41.psd
+  artifactKey: Guid(fa4bc2b935fcd014da124ab215277494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_41.psd using Guid(fa4bc2b935fcd014da124ab215277494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ea78ac19c2728263203331d95a1202') in 0.022116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.952858 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_38.psd
+  artifactKey: Guid(cdb26407a6f1a754a9e318262906c67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_38.psd using Guid(cdb26407a6f1a754a9e318262906c67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb26d69996b6c4e88521b59f750114da') in 0.021183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.419227 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_36.psd
+  artifactKey: Guid(14ef196d4d0acdb4f96b4878afdd91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_36.psd using Guid(14ef196d4d0acdb4f96b4878afdd91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19700d956a9569174f493a312820d1c') in 0.019545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.447364 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_34.psd
+  artifactKey: Guid(3e36466cfd27dd445896fb107749e9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_34.psd using Guid(3e36466cfd27dd445896fb107749e9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be7399b725a6e482c7eef80ffcdf4fc') in 0.020930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.866604 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_26.PSD
+  artifactKey: Guid(dab615a4baab8474ea83c87a98dfe515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_26.PSD using Guid(dab615a4baab8474ea83c87a98dfe515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a35db3d0e6534ec32236385813c7d755') in 0.022194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.418242 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_35.psd
+  artifactKey: Guid(7fa9f0f5bc6e8e9489abe88718c9b87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_35.psd using Guid(7fa9f0f5bc6e8e9489abe88718c9b87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ea19582e61bd2918891a97da4b7b37') in 0.020815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.401262 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_37.psd
+  artifactKey: Guid(a8ea36a4881467240b1ba10508b153ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_37.psd using Guid(a8ea36a4881467240b1ba10508b153ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe1018ece248d7706cd31fb77a32db85') in 0.016272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.056136 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_33.psd
+  artifactKey: Guid(e5a6e26ee3d8eb147b68f6d227fcaa9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_33.psd using Guid(e5a6e26ee3d8eb147b68f6d227fcaa9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61cfb4fca807fff4abdfb27678381ba8') in 0.019817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 105.316036 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_40.psd
+  artifactKey: Guid(fca8f5785f52bde469295dce87a815b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/red/r_40.psd using Guid(fca8f5785f52bde469295dce87a815b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71aa62d5f9d415de2c0fa9a5ca95572f') in 0.022592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.469804 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_02.PSD
+  artifactKey: Guid(f4297dedbda5030429d51b904cc62c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_02.PSD using Guid(f4297dedbda5030429d51b904cc62c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf329907eb0c2c9848ad0df7fc4d018') in 0.018520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.312496 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_05.PSD
+  artifactKey: Guid(724ba03b01acebc4f950700604957166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_05.PSD using Guid(724ba03b01acebc4f950700604957166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2165d5857a3ef54ddbb1a371f1d4aa') in 0.020050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.333570 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_10.PSD
+  artifactKey: Guid(8d2d60b59dbee6c41af71be72b44161e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_10.PSD using Guid(8d2d60b59dbee6c41af71be72b44161e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996128be98cad88ef793eea53f58a398') in 0.024654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.920252 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_17.psd
+  artifactKey: Guid(7272a50b6f636fc4e99abb02473d9260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_17.psd using Guid(7272a50b6f636fc4e99abb02473d9260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733c697e42eb49628b968611d5e4725a') in 0.021196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.425268 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_13.PSD
+  artifactKey: Guid(b363935c267123645ac63864444b3fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_13.PSD using Guid(b363935c267123645ac63864444b3fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '127ef7d484c71c1be82fee811cea0d5f') in 0.019853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.780345 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_15.psd
+  artifactKey: Guid(4d9e19879e7dc764d9e612bb32c6ecdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_15.psd using Guid(4d9e19879e7dc764d9e612bb32c6ecdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe974b335cdbfdad274eb224cea961c') in 0.020830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.217590 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_29.psd
+  artifactKey: Guid(7c7b969b2455850429631167d88dd5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/Flat_Skills_Icons/PSD/violet/v_29.psd using Guid(7c7b969b2455850429631167d88dd5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793cba09351c3692f237c80aca38d72a') in 0.018662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.736895 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_08.PNG
+  artifactKey: Guid(9e3a9a951e3ed104fb3554724996494f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_08.PNG using Guid(9e3a9a951e3ed104fb3554724996494f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd255fe452c6fedca793456d1fbfbf331') in 0.020159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.401175 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_25.PNG
+  artifactKey: Guid(9637501b91f2df9498e3b095213922fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_25.PNG using Guid(9637501b91f2df9498e3b095213922fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ecd443e28ae0a88d209b2132429b03b') in 0.018053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.166666 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_30.PNG
+  artifactKey: Guid(c024522aa3c58194a845152b1459f810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_30.PNG using Guid(c024522aa3c58194a845152b1459f810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de714828ba1ddc567e330c204f95970') in 0.017983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.005371 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_34.PNG
+  artifactKey: Guid(5ed4d424cae1eba479d75c6c6955d85f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_34.PNG using Guid(5ed4d424cae1eba479d75c6c6955d85f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f061886605374f9ba3c7a179af5dc71') in 0.017527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.413543 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_35.PNG
+  artifactKey: Guid(e2d03fde4b7846e4eb16b9877a79fefb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_35.PNG using Guid(e2d03fde4b7846e4eb16b9877a79fefb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d53977a2b979dddf86cf9ae4451277') in 0.020125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.405112 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_37.PNG
+  artifactKey: Guid(317335d40ea5e764f80e8b51fe67bcbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_37.PNG using Guid(317335d40ea5e764f80e8b51fe67bcbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b8e8f75fa6d7fe20299c3bfc20aa38') in 0.017950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.362696 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_41.PNG
+  artifactKey: Guid(50fbe8d2ae14db44fb06bcd338f791b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_41.PNG using Guid(50fbe8d2ae14db44fb06bcd338f791b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa426d5b0758cf690028482cd53687a') in 0.016127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.377669 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_42.PNG
+  artifactKey: Guid(280d6813f0f7031469a0de6530376622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_42.PNG using Guid(280d6813f0f7031469a0de6530376622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e36109d8b3cc92e79f8d7863d43dd8') in 0.018285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.573250 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_43.PNG
+  artifactKey: Guid(fe3d20b2415396d4787fe03c884bd7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_43.PNG using Guid(fe3d20b2415396d4787fe03c884bd7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d252e5b2941b5f6ced4887303ab180b') in 0.019257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.453626 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_44.PNG
+  artifactKey: Guid(5300a441c36aaa949b9ade0390b164ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_44.PNG using Guid(5300a441c36aaa949b9ade0390b164ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ea37f70f51e826886a44c6465725e3') in 0.020728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.982290 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_49.PNG
+  artifactKey: Guid(3dbcd72577fc6534bb82f212c6d7bd78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_49.PNG using Guid(3dbcd72577fc6534bb82f212c6d7bd78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f350120377488e1c37cd221f4f2f59') in 0.017417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.323747 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_51.PNG
+  artifactKey: Guid(da8d9bc9ad822604891f5035b4a38a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_51.PNG using Guid(da8d9bc9ad822604891f5035b4a38a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f811fff22b8800cff51d43f3cbdbb9ea') in 0.018730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.358594 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_52.PNG
+  artifactKey: Guid(e3ceb10fed9af0b42aa2fde5baab6b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_52.PNG using Guid(e3ceb10fed9af0b42aa2fde5baab6b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dad9e829ec2de4d2390899cdc541faa') in 0.018381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.384220 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_53.PNG
+  artifactKey: Guid(99663a40ccdedfe4894dafdf552a16a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_53.PNG using Guid(99663a40ccdedfe4894dafdf552a16a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4fca5d670f7b0b4b27f82565b5946c6') in 0.018375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.334940 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_56.PNG
+  artifactKey: Guid(2a4112af256abc54b8f65e05f54ec7c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_56.PNG using Guid(2a4112af256abc54b8f65e05f54ec7c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37124bc9272424145ec86ba389f7e050') in 0.017920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.398119 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_57.PNG
+  artifactKey: Guid(73ed405079f2db04592d9279fd771014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_57.PNG using Guid(73ed405079f2db04592d9279fd771014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19610ec95843cabf85ccebe87f068910') in 0.018620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.417625 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_58.PNG
+  artifactKey: Guid(a3277ed08e252d34e99de7b46a66f837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_58.PNG using Guid(a3277ed08e252d34e99de7b46a66f837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff363f2acea39cc4e1a9feb3d8112c6') in 0.017204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.966157 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_64.PNG
+  artifactKey: Guid(a38a7bd8c4bca9b47a1d3e2f4f84a792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_64.PNG using Guid(a38a7bd8c4bca9b47a1d3e2f4f84a792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9450af9033487010dd9880a4b8b6a07') in 0.018613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.355947 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_65.PNG
+  artifactKey: Guid(c4201b4881412614c8ecf1d7f4008e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_65.PNG using Guid(c4201b4881412614c8ecf1d7f4008e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f621968146a29be994b18ed89e0ce087') in 0.019015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.629940 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_66.PNG
+  artifactKey: Guid(98b1b2036784c2840b0983b4edc99d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_66.PNG using Guid(98b1b2036784c2840b0983b4edc99d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb678ca8f5537f84923f570fe133abdf') in 0.018315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.915205 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_67.PNG
+  artifactKey: Guid(d4c0ec50e1790af4ab86a70b39155177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_67.PNG using Guid(d4c0ec50e1790af4ab86a70b39155177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebd24fcdc1be34966a17411b4bdf4b6') in 0.017855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.344637 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_68.PNG
+  artifactKey: Guid(ce8a84d4a66dfcc41bad44247c404576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_68.PNG using Guid(ce8a84d4a66dfcc41bad44247c404576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f70c36752b93f36b42aa1783d383a860') in 0.015377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.457498 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_70.PNG
+  artifactKey: Guid(04af0609c561cd44b84b10b29171a629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_70.PNG using Guid(04af0609c561cd44b84b10b29171a629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8994fe99585c5fc80488f6d0761887de') in 0.020255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.031858 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_75.PNG
+  artifactKey: Guid(c9b6a60cd11925c4598219033fa13d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_75.PNG using Guid(c9b6a60cd11925c4598219033fa13d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e03f273325aabf5d1e23d7f8a42fb03f') in 0.019857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.351549 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_77.PNG
+  artifactKey: Guid(42ab988505f6aac49bb7d1d44bd914e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_77.PNG using Guid(42ab988505f6aac49bb7d1d44bd914e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a395b465f61c1b9c24c49144fdbcd46') in 0.017538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.317928 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_79.PNG
+  artifactKey: Guid(c7a5b5e8ecf3dc043a17d1dee264df29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_79.PNG using Guid(c7a5b5e8ecf3dc043a17d1dee264df29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03a3c8ac0b6d66da50f8ba4c5355a160') in 0.024439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.992668 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_80.PNG
+  artifactKey: Guid(548b14ec4bfdd224c9b13441bcef965e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_80.PNG using Guid(548b14ec4bfdd224c9b13441bcef965e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ffb8f8be5c9bc4b649664d342c07fd') in 0.018990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.312007 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_83.PNG
+  artifactKey: Guid(f80e6b5973865b849b693d6b60e0b946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_83.PNG using Guid(f80e6b5973865b849b693d6b60e0b946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84e39cd32d6a01463cc61956bd65fae') in 0.017833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.413283 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_88.PNG
+  artifactKey: Guid(72eaa78542c64354fa85e019d4b3e2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_88.PNG using Guid(72eaa78542c64354fa85e019d4b3e2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19c50e145eaf2c9bf356faa17e2e5d15') in 0.017577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.321915 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_97.PNG
+  artifactKey: Guid(83e68661ae7088e43be7c407a741012f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_97.PNG using Guid(83e68661ae7088e43be7c407a741012f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554d7698a313a633a5e84f494ed39494') in 0.019076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.750326 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_101.PNG
+  artifactKey: Guid(dbdd31e13ea9194449613e6616d0b0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_101.PNG using Guid(dbdd31e13ea9194449613e6616d0b0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b08a45fdca6874d90343708dd30cbd4c') in 0.017863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.379163 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_103.PNG
+  artifactKey: Guid(9184b6a37ad0216498230f9a3d5746ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_103.PNG using Guid(9184b6a37ad0216498230f9a3d5746ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f44347193e85ecbc25a8827e371739') in 0.017494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.372422 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_105.PNG
+  artifactKey: Guid(96b191083f8ef844884c1a1b70a2834c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_105.PNG using Guid(96b191083f8ef844884c1a1b70a2834c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd07c478ee732db7a6c0e56ae479cf4f9') in 0.016686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.534435 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_107.PNG
+  artifactKey: Guid(e32b1ee751808c54db1c18712c33e652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_107.PNG using Guid(e32b1ee751808c54db1c18712c33e652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de5d5b14db9dd739dbb9004574d03ef1') in 0.019474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.866603 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_109.PNG
+  artifactKey: Guid(07d311457c0756949832c76ef46a0d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_109.PNG using Guid(07d311457c0756949832c76ef46a0d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4cfdf885e505cf48df51f3bd90eb967') in 0.044201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.446283 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_110.PNG
+  artifactKey: Guid(ab12919eb328592438163036865b38b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_110.PNG using Guid(ab12919eb328592438163036865b38b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f67c2e51dbd5ed91a8d3819d413c558b') in 0.044070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.388543 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_111.PNG
+  artifactKey: Guid(cd97f89324d17464ea54945e6ef22238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_111.PNG using Guid(cd97f89324d17464ea54945e6ef22238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0105bb30489695cbe850b1de7ae0233b') in 0.043805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.079723 seconds.
+  path: Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_06.PNG
+  artifactKey: Guid(ea9a515b9030812449830cf16d0162e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assets/SpellBookMegapack/SciFi_Flat_Skills/Skills/Tex_skill_06.PNG using Guid(ea9a515b9030812449830cf16d0162e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00873de1939eb540b66393fa9f749f0a') in 0.043937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1286.317622 seconds.
+  path: Assets/Resources/Prefab/UI/e_castle.png
+  artifactKey: Guid(e86f4bcdb31a6304b9cb2d107614b419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/UI/e_castle.png using Guid(e86f4bcdb31a6304b9cb2d107614b419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24c8b726ea09f5def83e9d83740fa10') in 0.014785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.650668 seconds.
+  path: Assets/Resources/Prefab/UI/castle.png
+  artifactKey: Guid(5b5f89a452ddf97499f58aad5792e523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/UI/castle.png using Guid(5b5f89a452ddf97499f58aad5792e523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7f7333a304cad8f28596898fe62a73') in 0.016023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.903194 seconds.
+  path: Assets/Resources/Prefab/UI/e_castle.png
+  artifactKey: Guid(e86f4bcdb31a6304b9cb2d107614b419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/UI/e_castle.png using Guid(e86f4bcdb31a6304b9cb2d107614b419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '581adc1a2e5bbf0b82c0ec7039b58666') in 0.017405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.411744 seconds.
+  path: Assets/Resources/Prefab/UI/castle.png
+  artifactKey: Guid(5b5f89a452ddf97499f58aad5792e523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/UI/castle.png using Guid(5b5f89a452ddf97499f58aad5792e523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a358160bfa253b20fd50713cc25644ea') in 0.033470 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001919 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.970 seconds
+Domain Reload Profiling:
+	ReloadAssembly (971ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (816ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (293ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (291ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (182ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1494 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.4 MB.
+System memory in use after: 164.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2033.
+Total: 3.123600 ms (FindLiveObjects: 0.168200 ms CreateObjectMapping: 0.109200 ms MarkObjects: 2.800900 ms  DeleteObjects: 0.044400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1915.295637 seconds.
+  path: Assets/Resources/Prefab/UI/e_Castle (1).png
+  artifactKey: Guid(8d8734e4b67a15a439a3132e9b92426f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/UI/e_Castle (1).png using Guid(8d8734e4b67a15a439a3132e9b92426f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c5af4cad007997d4bae5650710a775') in 0.040916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.928453 seconds.
+  path: Assets/Resources/Prefab/UI/e_Castle (1).png
+  artifactKey: Guid(8d8734e4b67a15a439a3132e9b92426f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefab/UI/e_Castle (1).png using Guid(8d8734e4b67a15a439a3132e9b92426f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d766b89bc5906a789f04b5bcb6593d1') in 0.060943 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002054 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.866 seconds
+Domain Reload Profiling:
+	ReloadAssembly (866ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (715ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (253ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (267ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (185ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1496 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 162.9 MB.
-System memory in use after: 163.1 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2024.
-Total: 2.540900 ms (FindLiveObjects: 0.127000 ms CreateObjectMapping: 0.061200 ms MarkObjects: 2.303300 ms  DeleteObjects: 0.048300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1135.875559 seconds.
-  path: Assets/Scenes/Story_Scene.unity
-  artifactKey: Guid(ca4b6eae846772a4bbdc7855f2b83733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Story_Scene.unity using Guid(ca4b6eae846772a4bbdc7855f2b83733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b5c2fcfa31c95a6910ee4b38254a40') in 0.026856 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.293230 seconds.
-  path: Assets/Scenes/Skill_Scene.unity
-  artifactKey: Guid(6209a07d1dfbbb9488672c0d85ebd915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Skill_Scene.unity using Guid(6209a07d1dfbbb9488672c0d85ebd915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24fa7c064d0b1bb7ff851baac7544484') in 0.014079 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.663035 seconds.
-  path: Assets/Scenes/Loby_Scene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Loby_Scene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45b1832944c210c4dea24dad851911e') in 0.012894 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.959989 seconds.
-  path: Assets/Scenes/MainScene.unity
-  artifactKey: Guid(7a9bd330fbafc0a48a1ad023b74214e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScene.unity using Guid(7a9bd330fbafc0a48a1ad023b74214e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '620400af05116ce1d75576f2c74104b9') in 0.002969 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.748595 seconds.
-  path: Assets/Resources/Assets/Hovl Studio/3D Lasers Pack/Prefabs/Laser beam 1.prefab
-  artifactKey: Guid(b478a3c4c8ae3bb42a5785ab95bcf6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/Hovl Studio/3D Lasers Pack/Prefabs/Laser beam 1.prefab using Guid(b478a3c4c8ae3bb42a5785ab95bcf6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b6f5420ec7adc80352266b69ab01b6') in 0.108153 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.218866 seconds.
-  path: Assets/Resources/Assets/Hovl Studio/Resources/Models/Conus.fbx
-  artifactKey: Guid(25ce058c1e3d07645ad3c004b15c262c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/Hovl Studio/Resources/Models/Conus.fbx using Guid(25ce058c1e3d07645ad3c004b15c262c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7338d902200e76dc57356cee2fbeb6ac') in 0.186679 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.111966 seconds.
-  path: Assets/Resources/Assets/Hovl Studio/AAA Projectiles Vol 1
-  artifactKey: Guid(c262a4075a2ef114dad9068b20acf5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Assets/Hovl Studio/AAA Projectiles Vol 1 using Guid(c262a4075a2ef114dad9068b20acf5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a828cf41590a05e5de4b7b8d79929236') in 0.015856 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001952 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.990 seconds
-Domain Reload Profiling:
-	ReloadAssembly (990ms)
-		BeginReloadAssembly (107ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (818ms)
-			LoadAssemblies (92ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (295ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (288ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (203ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (28ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1494 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.1 MB.
-System memory in use after: 163.2 MB.
+System memory in use before: 164.4 MB.
+System memory in use after: 164.5 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2029.
-Total: 2.356000 ms (FindLiveObjects: 0.124300 ms CreateObjectMapping: 0.051500 ms MarkObjects: 2.155300 ms  DeleteObjects: 0.024200 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2040.
+Total: 4.253800 ms (FindLiveObjects: 0.149300 ms CreateObjectMapping: 0.052900 ms MarkObjects: 3.990000 ms  DeleteObjects: 0.060200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
