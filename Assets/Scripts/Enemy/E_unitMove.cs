@@ -396,11 +396,12 @@ public class E_unitMove : MonoBehaviour
             isHades = false;
         }
 
-        if (ehealth <= 0)
+        if (ehealth <= 0 && !isHades)
         {
             moving.isStopped = true;
             moving.velocity = Vector3.zero;
             E_attackRange.SetActive(false);
+            targetUnit = null;
 
             GameManager.instance.gold += 2;
 

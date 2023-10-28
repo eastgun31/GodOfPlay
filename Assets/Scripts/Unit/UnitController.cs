@@ -90,11 +90,6 @@ public class UnitController : MonoBehaviour
         Uslider.value = uhealth / maxhp;
         Sslider.value = ushieldValue / maxS; //
 
-
-        //if (uhealth <= 0)             //ÇöÀç ¹Ì»ç¿ëÀÎµ¥ È¤½Ã¸ô¶ó ÀÏ´Ü ³öµÒ
-        //{
-        //    Invoke("P_Die", 3f);
-        //}
     }
 
     public void SelectUnit()
@@ -461,6 +456,7 @@ public class UnitController : MonoBehaviour
             navMeshAgent.isStopped = true;
             navMeshAgent.velocity = Vector3.zero;
             P_attackRange.SetActive(false);
+            targetUnit = null;
 
             RTSUnitController.instance.UnitList.Remove(this);
             RTSUnitController.instance.selectedUnitList.Remove(this);

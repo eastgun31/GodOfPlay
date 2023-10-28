@@ -27,6 +27,8 @@ public class Points : MonoBehaviour
     public GameObject GobjBlue;
     public GameObject GobjRed;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -107,11 +109,6 @@ public class Points : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        //if(other.tag == "Enemy" && other.tag == "Player")
-        //{
-        //    pointcheck = 0;
-        //}
-
         if (other.CompareTag(enemy)) //적군 점령지에 있는지 체크
         {
             e_distance = Vector3.Distance(other.transform.position, transform.position);
